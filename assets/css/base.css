@@ -44,6 +44,10 @@ section {
   gap: 18px;
   margin-bottom: 48px;
 }
+.section-header--divided {
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 18px;
+}
 
 .section-label {
   font-family: var(--font-heading);
