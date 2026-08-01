@@ -1,0 +1,18 @@
+{
+  "orgName": "Black In Genetics",
+  "founded": "2020",
+  "role": "Founder; Current President",
+  "logo": "assets/images/media/black-in-genetics-logo.png",
+  "externalUrl": "https://blackingenetics.com",
+  "bio": "According to a recent study (Nguyen et al. 2023) the representation of Black or African Americans in academia is disproportionately low, with fewer than 2% of all NIH-funded laboratories being led by Black or African American scientific investigators. Genetics is a field whose data has been misused to discriminate against groups of people throughout history, highlighting the field's need for diverse voices. As a Black woman and an academic, I understand the immense value in increasing representation of diverse individuals in science by fostering communities for them to find support and belonging. Towards this end, I founded Black In Genetics, a nonprofit dedicated to improving the retention and recruitment rates of Black-identifying academics, professionals and trainees who study genetics. We provide mentoring and financial support in the form of an annual fellowship, hosting networking and social activities, and offering a platform to promote the work and voices of Black-identifying genetics professionals and trainees. Black In Genetics' success in creating a community for Black-identifying individuals in the genetics community to connect has garnered funding and institutional support from the Chan Zuckerberg Initiative. Furthermore, Black In Genetics was recently recognized for our outstanding leadership and service in the scientific community by the United Negro College Fund's Ernest E. Just Life Science Society at their Celebration of African Americans in the Life Sciences hosted at the National Museum of African American History and Culture in Washington, DC.",
+  "highlights": [
+    "Founded 2020 as a nonprofit supporting Black-identifying academics, professionals, and trainees in genetics",
+    "Provides an annual fellowship, mentoring, financial support, and networking/social programming",
+    "Funded and institutionally supported by the Chan Zuckerberg Initiative (2022–2024)",
+    "Recognized by the United Negro College Fund's Ernest E. Just Life Science Society at the National Museum of African American History and Culture, Washington, DC"
+  ],
+  "relatedPresentations": [
+    { "title": "How and When to Add Voices", "venue": "Rosalind Franklin Society Virtual Meeting", "date": "2020-12-16" },
+    { "title": "The Creation of Black in Genetics and the Call to Action to Combat Systemic Racism in Science", "venue": "American Society for Human Genetics Annual Meeting", "date": "2020-10-29" }
+  ]
+}

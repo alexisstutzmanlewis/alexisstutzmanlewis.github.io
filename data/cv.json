@@ -1,0 +1,51 @@
+{
+  "header": {
+    "name": "Alexis V. Stutzman Lewis",
+    "title": "Postdoctoral Research Scientist",
+    "institution": "Columbia University",
+    "location": "New York, NY 10027",
+    "email": "avs2177@columbia.edu",
+    "fullListUrl": "https://tinyurl.com/AlexisSL"
+  },
+  "education": [
+    { "date": "2024–present", "title": "Postdoctoral Research Scientist", "org": "Columbia University", "detail": "Advisor: Bianca Jones Marlin" },
+    { "date": "May 2024", "title": "Ph.D., Genetics & Molecular Biology", "org": "University of North Carolina at Chapel Hill", "detail": "Advisors: Jill M. Dowen & Daniel J. McKay. Thesis: \"Epigenetic Determinants of Heterochromatic 3D Genome Organization\"" },
+    { "date": "June 2018", "title": "B.S., Biological Sciences", "org": "University of Chicago", "detail": "Advisors: Kohta Ikegami & Ivan Moskowitz. Thesis: \"Mitochondrial defects as a candidate molecular mechanism for Lamin A/C-related cardiomyopathy\"" }
+  ],
+  "grantsAndFellowships": [
+    { "date": "2025–2028", "title": "Junior Fellow, Simons Society of Fellows" },
+    { "date": "2025–2028", "title": "Burroughs Wellcome Fund PDEP" },
+    { "date": "2024–2025", "title": "E. E. Just Postgraduate Fellowship in the Life Sciences" },
+    { "date": "2022–2024", "title": "CZI Science", "detail": "Awarded to BlackInGenetics" },
+    { "date": "2020–2021", "title": "T32 GM135128 (NIH/NIGMS)" },
+    { "date": "2019–2020", "title": "T32 GM007092-41 (NIH/NIGMS)" },
+    { "date": "2018–2024", "title": "UNC IMSD-GMB Genetics Diversity Excellence Fellow" }
+  ],
+  "awards": [
+    { "date": "2025", "title": "Society for Neuroscience Trainee Professional Development Award (TPDA)" },
+    { "date": "2022", "title": "UNC GMB Retreat — Best Graduate Student Talk" },
+    { "date": "2020–2021", "title": "HHMI Gilliam Fellowship Nominee" },
+    { "date": "2020", "title": "NSF Graduate Research Fellowship Program Honorable Mention" },
+    { "date": "2015", "title": "Hult Prize Competition, Booth School of Business, University of Chicago" }
+  ],
+  "teaching": [
+    { "date": "2020–2022", "title": "Biology Tutor", "org": "Chancellors' Science Scholars, University of North Carolina at Chapel Hill" },
+    { "date": "Spring 2022", "title": "GNET 632: Advanced Molecular Biology (Graduate), Tutor", "org": "Initiative for Maximizing Student Diversity, UNC" },
+    { "date": "Fall 2021", "title": "GNET 621: Genetic Analysis (Graduate), Tutor", "org": "Initiative for Maximizing Student Diversity, UNC" },
+    { "date": "Fall 2019", "title": "BIOL 434: Advanced Molecular Biology, Teaching Assistant", "org": "University of North Carolina at Chapel Hill" },
+    { "date": "2015–2018", "title": "STEM Curriculum Coordinator; Substitute Teacher; Individual Tutor", "org": "Sonia Shankman Orthogenic School" },
+    { "date": "2017–2018", "title": "Individual Tutor", "org": "University of Chicago Lab School" }
+  ],
+  "service": [
+    { "date": "2025–present", "title": "Storytelling Cohort for Zuckerman Institute", "org": "Columbia University" },
+    { "date": "2024–present", "title": "BUMP Mentor", "org": "Columbia University" },
+    { "date": "2020–present", "title": "BlackInGenetics, Inc. — Founder; Current President" },
+    { "date": "2021", "title": "Genetics Society of America Drosophila Conference — Session Co-Chair" },
+    { "date": "2019–2021", "title": "BBSP Peer Mentor", "org": "UNC" }
+  ],
+  "mentoring": [
+    { "name": "Ariana Reid", "role": "Undergraduate", "org": "University of North Carolina at Chapel Hill" },
+    { "name": "Glennis Cho", "role": "Undergraduate", "org": "Barnard College" },
+    { "name": "Camaria Polk", "role": "Undergraduate", "org": "Barnard College" }
+  ]
+}

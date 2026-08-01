@@ -26,7 +26,7 @@ to the audience and to accessibility (bolder text weights, no italic headings).
 | Content data | JSON files in `/data`, rendered client-side via `fetch()` | See §5. Avoids a build step while keeping publications/presentations/media editable without touching markup |
 | Hosting | Netlify | Free tier; auto-deploys from GitHub; built-in form handling |
 | Contact method | Real contact form (Netlify Forms) | No custom backend needed |
-| Domain | Deferred | Launch on a free `*.netlify.app` subdomain first; buy a custom domain after review. **Open item: confirm desired domain name(s) to check availability.** |
+| Domain | Deferred | Launch on a free `*.netlify.app` subdomain first. Candidate name: **alexis-stutzmanlewis** (`.com` — availability not yet checked; buy after review). |
 | Analytics | Lightweight, privacy-friendly (GoatCounter) | Matches the reference site's approach — anonymous pageviews only, free, no cookie banner needed |
 
 **SEO/JS tradeoff to flag:** rendering publications/presentations/media via client-side `fetch()`
@@ -94,29 +94,39 @@ one-off flourish — it's not a heading.
 
 ## 5. Content/data model
 
-Publications, presentations, and media entries are pre-populated as a starting draft in `/data`
-directly from the user's existing Notion page content — **these need a final accuracy pass**,
-especially DOIs and years marked `TODO` below:
+Publications, presentations, and CV data are now sourced from the user's official CV
+(`260212_Stutzman_CV.pdf`), which superseded the earlier Notion-derived draft:
 
-- [`data/publications.json`](data/publications.json) — 4 entries drafted; DOIs/years need
-  confirmation (the Notion page truncated DOI links visually, e.g. `doi.org/10.…0325-2`).
-- [`data/presentations.json`](data/presentations.json) — `oral` and `posters` arrays, fully
-  populated with titles/venues/dates from Notion.
+- [`data/publications.json`](data/publications.json) — 6 entries, full DOIs/PMIDs/years confirmed
+  from the CV (includes a 2025 bioRxiv preprint not in the original Notion page).
+- [`data/presentations.json`](data/presentations.json) — `oral` and `posters` arrays; enriched
+  with co-presenter names from the Black In Genetics biosketch excerpt. **One unresolved
+  discrepancy:** the CV lists the ASHG 2020 talk ("The Creation of Black in Genetics...") as
+  October 29, 2020, but the biosketch excerpt says October 27, 2020 — flagged with a `note` field
+  on that entry; needs the user to confirm the correct date.
+- [`data/cv.json`](data/cv.json) — header info, education, grants/fellowships, awards/honors,
+  teaching experience, service, and mentoring — all from the CV.
+- [`data/black-in-genetics.json`](data/black-in-genetics.json) — full biosketch paragraph, key
+  highlights (CZI funding, UNCF Ernest E. Just recognition), logo path, and link to
+  blackingenetics.com.
 - [`data/media.json`](data/media.json) — 2 entries (Front Line Genomics interview, NC DNA Day
-  article).
+  article), from the earlier Notion pass; still accurate.
 
 Each page's JS (`assets/js/render-cv.js`, etc.) fetches the relevant JSON and renders it into the
 DOM at load time — content edits going forward mean editing these files, never the HTML/CSS.
 
-**Still needed from the user, not yet in `/data`:**
-- Full education/positions/honors timeline for the CV page
-- Confirmed/corrected DOIs and years for all 4 publications
-- CV as a downloadable PDF
-- Bio/research-statement text (can be drafted from the Notion "My Science" text and refined)
-- Headshot photo, research imagery/video, Black In Genetics logo (user confirmed these are mostly
-  ready to send)
-- Domain name candidate(s) to check availability
-- Exact contact form field list
+**Assets received and placed:**
+- `assets/images/media/headshot.jpg` — primary headshot (white background, resized for web)
+- `assets/images/media/black-in-genetics-logo.png` — org logo
+
+**Still open:**
+- Confirm the Oct 27 vs. Oct 29, 2020 date discrepancy noted above
+- CV as a downloadable PDF (the source CV PDF itself can likely be used directly — confirm)
+- A second, more personal/candid photo for the Just for Fun page (candidates exist in
+  `/Users/alexisv7/Documents/Professional Headshots/Favorite Headshots/`)
+- Research imagery/video (fly imaginal disc photo, C. elegans embryo video) for Just for Fun
+- Domain availability check for **alexis-stutzmanlewis.com**
+- Contact form fields — delegated to Claude to design; user will request edits after reviewing
 
 ## 6. Folder structure
 
@@ -183,11 +193,14 @@ Once outstanding content items in §5 are resolved (or explicitly deferred with 
 
 ## 9. Open items requiring user input before/during build
 
-- [ ] Domain name candidate(s)
-- [ ] Full CV timeline (education, positions, honors/awards)
-- [ ] Confirmed DOIs + years for the 4 publications
-- [ ] CV PDF file
-- [ ] Headshot, research photos/video, Black In Genetics logo
-- [ ] Black In Genetics page content depth (feature blurb vs. fuller writeup)
-- [ ] Exact contact form fields
-- [ ] Final bio/research-statement copy for Home + CV
+- [x] Domain name candidate — alexis-stutzmanlewis.com (availability still needs checking)
+- [x] Full CV timeline (education, positions, honors/awards) — in `data/cv.json`
+- [x] Confirmed DOIs + years for all publications — in `data/publications.json`
+- [x] Headshot, Black In Genetics logo — placed in `assets/images/media/`
+- [x] Black In Genetics page content — full biosketch text provided, in `data/black-in-genetics.json`
+- [x] Contact form fields — delegated to Claude
+- [ ] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy (see §5)
+- [ ] CV PDF file for the "Download CV" button (confirm the source PDF can be used as-is)
+- [ ] A second, more personal photo for Just for Fun (candidates in the headshots folder)
+- [ ] Research imagery/video for Just for Fun (fly imaginal disc photo, C. elegans video)
+- [ ] Final bio/research-statement copy for Home + CV (can draft from CV/biosketch and refine)

@@ -1,38 +1,71 @@
 [
   {
+    "title": "Early postpartum development of pup urine preference in mothers",
+    "authors": ["Andreu V", "Sen R", "El Houda Mimouni N", "Lee EJ", "Ferguson D", "Stutzman AV", "Marlin BJ"],
+    "journal": "bioRxiv",
+    "doi": "10.1101/2025.09.01.673527",
+    "year": "2025",
+    "type": "Preprint",
+    "tags": ["Behavioral neuroscience", "Intergenerational inheritance", "Mouse"],
+    "plainLanguageSummary": null
+  },
+  {
+    "title": "Cohesin stabilization at promoters and enhancers by common transcription factors and chromatin regulators",
+    "authors": ["Bryan AF", "Justice M", "Stutzman AV", "McKay DJ", "Dowen JM"],
+    "journal": "Epigenetics & Chromatin. 2025 Jun 9;18(1):33",
+    "doi": "10.1186/s13072-025-00598-2",
+    "pmid": "40490791",
+    "pmcid": "PMC12147376",
+    "year": "2025",
+    "type": "Research article",
+    "tags": ["Genomics", "Cohesin", "Gene regulation"],
+    "plainLanguageSummary": null
+  },
+  {
+    "title": "Pervasive nuclear envelope ruptures precede ECM signaling and disease onset without activating cGAS-STING in Lamin-cardiomyopathy mice",
+    "authors": ["En A", "Bogireddi H", "Thomas B", "Stutzman AV", "Ikegami S", "LaForest B", "Almakki O", "Pytel P", "Moskowitz IP", "Ikegami K"],
+    "journal": "Cell Reports. 2024 May 29;43(6):114284",
+    "doi": "10.1016/j.celrep.2024.114284",
+    "pmid": "38814785",
+    "year": "2024",
+    "type": "Research article",
+    "tags": ["Cardiomyopathy", "Nuclear envelope", "Mouse"],
+    "plainLanguageSummary": null
+  },
+  {
     "title": "Heterochromatic 3D genome organization is directed by HP1a- and H3K9-dependent and independent mechanisms",
-    "authors": ["Alexis V. Stutzman", "Christina A. Hill", "Robin L. Armstrong", "Riya Gohil", "Robert J. Duronio", "Jill M. Dowen", "Daniel J. McKay"],
-    "doi": "TODO: confirm full DOI (partial seen: 10.***0325-2)",
-    "year": "TODO: confirm publication year",
+    "authors": ["Stutzman AV", "Hill CA", "Armstrong RL", "Gohil R", "Duronio RJ", "Dowen JM", "McKay DJ"],
+    "journal": "Molecular Cell. 2024 Jun 6;84(11):2017-2035.e6",
+    "doi": "10.1016/j.molcel.2024.05.002",
+    "pmid": "38795706",
+    "pmcid": "PMC11185254",
+    "year": "2024",
     "type": "Research article",
     "tags": ["Genomics", "D. melanogaster", "Heterochromatin", "3D genome organization"],
     "plainLanguageSummary": null
   },
   {
     "title": "Transcription-independent TFIIIC-bound sites cluster near heterochromatin boundaries within lamina-associated domains in C. elegans",
-    "authors": ["Alexis V. Stutzman", "April S. Liang", "Vera Beilinson", "Kohta Ikegami"],
-    "doi": "TODO: confirm full DOI",
-    "year": "TODO: confirm publication year",
+    "authors": ["Stutzman AV", "Liang AS", "Beilinson V", "Ikegami K"],
+    "journal": "Epigenetics & Chromatin. 2020 Jan 9;13(1):1",
+    "doi": "10.1186/s13072-019-0325-2",
+    "pmid": "31918747",
+    "pmcid": "PMC6950938",
+    "year": "2020",
     "type": "Research article",
     "tags": ["Genomics", "C. elegans", "Transcription"],
     "plainLanguageSummary": null
   },
   {
     "title": "Advancements in mapping 3D genome architecture",
-    "authors": ["Daniel J. McKay", "Alexis V. Stutzman", "Jill M. Dowen"],
-    "doi": "TODO: confirm full DOI (partial seen: ...06.002)",
-    "year": "TODO: confirm publication year",
+    "authors": ["McKay DJ", "Stutzman AV", "Dowen JM"],
+    "journal": "Methods. 2020 Jan 1;170:75-81",
+    "doi": "10.1016/j.ymeth.2019.06.002",
+    "pmid": "31201934",
+    "pmcid": "PMC7391055",
+    "year": "2020",
     "type": "Review",
     "tags": ["Review", "Genomics", "3D genome organization"],
     "plainLanguageSummary": "DNA is non-randomly distributed in the 3-dimensional space of the nucleus. Scientists have historically studied this non-random genome architecture by microscopy-based techniques. With the development of genomics came assays to map genome architecture with DNA-sequence level resolution. This paper reviews those assays and compares the molecular details underlying them. Assays covered: Chromosome Conformation Capture assays (including Hi-C), SPRITE, and Trac-looping."
-  },
-  {
-    "title": "Pervasive nuclear envelope ruptures precede ECM signaling and disease onset without activating cGAS-STING in Lamin-cardiomyopathy mice",
-    "authors": ["Atsuki En", "Hanumakumar Bogireddi", "Briana Thomas", "Alexis V. Stutzman", "Sachie Ikegami", "Brigitte LaForest", "Omar Almakki", "Peter Pytel", "Ivan P. Moskowitz", "Kohta Ikegami"],
-    "doi": "TODO: confirm DOI",
-    "year": "TODO: confirm publication year",
-    "type": "Research article",
-    "tags": ["TODO: confirm tags"],
-    "plainLanguageSummary": null
   }
 ]
