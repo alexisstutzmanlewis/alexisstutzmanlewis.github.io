@@ -43,8 +43,6 @@ section {
   align-items: baseline;
   gap: 18px;
   margin-bottom: 48px;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 18px;
 }
 
 .section-label {

@@ -145,7 +145,6 @@ nav.site-nav.scrolled { border-bottom-color: var(--rule); }
   padding: 20px 0; border-bottom: 1px solid var(--rule); position: relative;
   transition: padding-left 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-.data-list .data-row:first-child { border-top: 1px solid var(--rule); }
 .data-row::before {
   content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%) scaleY(0);
   width: 2px; height: 60%; background: var(--plum-text); transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
