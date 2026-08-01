@@ -21,12 +21,12 @@ to the audience and to accessibility (bolder text weights, no italic headings).
 
 | Decision | Choice | Notes |
 |---|---|---|
-| Version control | Git, from day one | Repo initialized locally; remote is the user's existing **private** repo, https://github.com/14stutzmanav/14stutzmanav.github.io (superseding an earlier abandoned attempt) |
+| Version control | Git, from day one | Repo: https://github.com/alexisstutzmanlewis/alexisstutzmanlewis.github.io (originally created under the user's prior GitHub username `14stutzmanav`; user renamed their GitHub account to `alexisstutzmanlewis`, and the repo was renamed to match) |
 | Tech stack | Vanilla HTML/CSS/JS | No framework, no bundler, no `npm install` required to run |
 | Content data | JSON files in `/data`, rendered client-side via `fetch()` | See §5. Avoids a build step while keeping publications/presentations/media editable without touching markup |
-| Hosting | **GitHub Pages** (switched from Netlify) | Free, served directly from the repo above at `14stutzmanav.github.io`. `netlify.toml` removed — no longer applicable. |
+| Hosting | **GitHub Pages** (switched from Netlify) | Free, served directly from the repo above at `alexisstutzmanlewis.github.io`. `netlify.toml` removed — no longer applicable. |
 | Contact method | Real contact form via **Formspree** (switched from Netlify Forms) | GitHub Pages has no built-in form handling; Formspree is a free third-party form backend. Form in `contact.html` currently points at a placeholder `YOUR_FORM_ID` — needs the user to sign up at formspree.io and swap it in. |
-| Domain | Deferred | Launch on the free `14stutzmanav.github.io` subdomain first. Candidate custom name: **alexis-stutzmanlewis** (`.com` — availability not yet checked). GitHub Pages custom domains need a `CNAME` file added at repo root once purchased. |
+| Domain | Deferred | Launch on the free `alexisstutzmanlewis.github.io` subdomain first. Candidate custom name: **alexis-stutzmanlewis** or **alexisstutzmanlewis** (`.com` — exact spelling/hyphenation and availability not yet confirmed). GitHub Pages custom domains need a `CNAME` file added at repo root once purchased. |
 | Analytics | Lightweight, privacy-friendly (GoatCounter) | Matches the reference site's approach — anonymous pageviews only, free, no cookie banner needed. Placeholder script tag (commented out) is on every page pending the user's own signup. |
 
 **SEO/JS tradeoff to flag:** rendering publications/presentations/media via client-side `fetch()`
@@ -207,13 +207,16 @@ Website/
    motion toggle and reduced-motion path, verified responsive layout at 1280px and ~700px widths.
    **Not yet done:** a real cross-browser pass (Safari/Firefox) and a screen-reader/keyboard-nav
    audit — recommended before or shortly after launch.
-10. [x] Pushed to github.com/14stutzmanav/14stutzmanav.github.io (force-pushed over an empty,
-    abandoned prior attempt — user confirmed). Repo made **public** (required for GitHub Pages on
-    the free plan — private-repo Pages needs a paid plan). GitHub Pages enabled, branch build from
-    `main` root. Live at https://14stutzmanav.github.io/ once the push finishes deploying.
-11. [ ] Sign up at formspree.io and swap `YOUR_FORM_ID` in `contact.html` for the contact form to work.
-12. [ ] Buy + connect custom domain (alexis-stutzmanlewis.com, once availability is confirmed) —
-    would need a `CNAME` file added at the repo root pointing to the domain.
+10. [x] Pushed to GitHub (force-pushed over an empty, abandoned prior attempt — user confirmed).
+    Repo made **public** (required for GitHub Pages on the free plan — private-repo Pages needs a
+    paid plan). GitHub Pages enabled, branch build from `main` root.
+11. [x] User renamed their GitHub account from `14stutzmanav` to `alexisstutzmanlewis`; repo renamed
+    to match (`alexisstutzmanlewis.github.io`). Pages config and build survived the rename intact.
+    Local git remote updated. `robots.txt`/`sitemap.xml` updated to the new URL. **Live at
+    https://alexisstutzmanlewis.github.io/**
+12. [ ] Sign up at formspree.io and swap `YOUR_FORM_ID` in `contact.html` for the contact form to work.
+13. [ ] Buy + connect custom domain (exact name/hyphenation still TBD, see §2), once availability is
+    confirmed — would need a `CNAME` file added at the repo root pointing to the domain.
 
 ## 9. Open items requiring user input before/during build
 
