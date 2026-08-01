@@ -58,10 +58,9 @@ reference site's nav pattern but pointing to pages, not anchors).
    (fly imaginal disc, C. elegans embryo video), a candid personal photo, "outside the lab"
    reflections, dedication to Rosie.
 5. **Contact** (`contact.html`) — Netlify-powered contact form (name/email/message) plus a
-   LinkedIn link. **Note:** the CV's "online" version deliberately omits the user's direct
-   Columbia email (`avs2177@columbia.edu`) — following that same privacy choice, this plan
-   assumes the contact form (not a public raw email address) is the primary contact path on the
-   site. Flag if a public email should be shown after all.
+   LinkedIn link (see `data/contact.json`). **Confirmed:** no public email address anywhere on
+   the site — user wants the Columbia email kept private, matching the CV's own choice. LinkedIn:
+   https://www.linkedin.com/in/alexis-stutzman-lewis-phd-975418100/
 
 ## 4. Design system (locked)
 
@@ -216,6 +215,8 @@ Once outstanding content items in §5 are resolved (or explicitly deferred with 
       privacy-conscious "online" version, no direct email listed), at `assets/documents/Stutzman_CV.pdf`
 - [x] A second, more personal photo for Just for Fun — `fullsizeoutput_3985.jpeg` chosen, placed
       as `assets/images/media/personal-photo.jpg`
-- [ ] Confirm: should the Contact page show a public email address, or rely on the form + LinkedIn
-      only (current assumption, matching the CV's own privacy choice)?
-- [ ] Final bio/research-statement copy for Home + CV (can draft from CV/biosketch and refine)
+- [x] Contact page privacy — confirmed no public email; form + LinkedIn only, in `data/contact.json`
+- [x] Final bio copy for Home + CV — approved, in `data/bio.json` (3rd person tagline, 1st person
+      research statement)
+
+All open items are resolved. Ready to move into the build sequence (§8).
