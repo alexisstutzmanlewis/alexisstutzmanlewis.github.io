@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Design mockup — botanical watercolor, elegant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #F7F1E3;
+    --ink: #2A2A22;
+    --mid: #5A5848;
+    --rule: #E3DBC7;
+    --plum: #C7AEC9;
+    --blue: #ABC5D6;
+    --sage: #B9CBA9;
+    --plum-text: #7A5D82;
+    --blue-text: #3F647E;
+    --sage-text: #4F6B45;
+  }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+  }
+  .wash-field {
+    position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0;
+  }
+  .wash { position: absolute; border-radius: 50%; filter: blur(70px); opacity: 0.55; }
+  .wash-1 { width: 42vw; height: 42vw; top: -10%; right: -6%; background: radial-gradient(circle, var(--plum), transparent 68%); animation: drift1 24s ease-in-out infinite alternate; }
+  .wash-2 { width: 38vw; height: 38vw; bottom: -12%; left: -8%; background: radial-gradient(circle, var(--blue), transparent 68%); animation: drift2 28s ease-in-out infinite alternate; }
+  .wash-3 { width: 30vw; height: 30vw; top: 38%; left: 42%; background: radial-gradient(circle, var(--sage), transparent 68%); animation: drift3 32s ease-in-out infinite alternate; }
+  @keyframes drift1 { to { transform: translate(-6%,8%) scale(1.1); } }
+  @keyframes drift2 { to { transform: translate(8%,-6%) scale(1.08); } }
+  @keyframes drift3 { to { transform: translate(-8%,-8%) scale(1.15); } }
+
+  #cursor-aura {
+    position: fixed; top: 0; left: 0; width: 420px; height: 420px; margin: -210px 0 0 -210px;
+    border-radius: 50%; pointer-events: none; z-index: 1; filter: blur(18px); opacity: 0;
+    background: radial-gradient(circle, rgba(199,174,201,0.30) 0%, rgba(171,197,214,0.22) 40%, rgba(185,203,169,0.16) 65%, transparent 75%);
+    transition: opacity 0.6s ease;
+  }
+  #cursor-aura.on { opacity: 1; }
+
+  .frame {
+    position: relative; z-index: 2; max-width: 720px; margin: 0 auto; padding: 90px 48px;
+  }
+  .plate-border {
+    border: 1px solid var(--rule); padding: 56px 48px; position: relative;
+  }
+  .plate-border::before {
+    content: ''; position: absolute; inset: 8px; border: 1px solid var(--rule);
+    pointer-events: none;
+  }
+  .eyebrow {
+    font-family: 'Jost', sans-serif; font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--mid); margin-bottom: 22px; font-weight: 500;
+  }
+  .eyebrow span { color: var(--plum-text); }
+  .name {
+    font-family: 'Cormorant Garamond', serif; font-weight: 600; font-style: normal;
+    font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; color: var(--ink); margin-bottom: 18px;
+  }
+  .tagline {
+    font-family: 'Jost', sans-serif; font-weight: 400; font-size: 1.02rem; line-height: 1.8;
+    color: var(--mid); max-width: 460px; margin-bottom: 40px;
+  }
+  .tagline strong { font-style: italic; font-family: 'Cormorant Garamond', serif; color: var(--blue-text); font-weight: 600; }
+  .cta-row { display: flex; gap: 22px; align-items: center; }
+  .btn-primary {
+    display: inline-block; padding: 13px 30px; border: 1px solid var(--ink); color: var(--ink);
+    font-family: 'Jost', sans-serif; font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;
+    text-decoration: none; position: relative; overflow: hidden; z-index: 1; transition: color 0.3s ease, transform 0.25s ease;
+  }
+  .btn-primary::before {
+    content: ''; position: absolute; inset: 0; background: var(--ink); transform: translateY(101%);
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); z-index: -1;
+  }
+  .btn-primary:hover { color: var(--paper); transform: translateY(-3px); }
+  .btn-primary:hover::before { transform: translateY(0); }
+  .btn-ghost {
+    font-family: 'Jost', sans-serif; font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;
+    color: var(--mid); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 4px;
+    transition: color 0.25s ease, border-color 0.25s ease, transform 0.25s ease; display: inline-block;
+  }
+  .btn-ghost:hover { color: var(--ink); border-color: var(--ink); transform: translateY(-3px); }
+
+  .swatches { display: flex; gap: 10px; margin-top: 48px; }
+  .sw { width: 30px; height: 30px; border-radius: 6px; border: 1px solid var(--rule); }
+</style>
+</head>
+<body>
+<div class="wash-field">
+  <div class="wash wash-1"></div>
+  <div class="wash wash-2"></div>
+  <div class="wash wash-3"></div>
+</div>
+<div id="cursor-aura"></div>
+
+<div class="frame">
+  <div class="plate-border">
+    <div class="eyebrow">Postdoctoral Research Scientist <span>&middot;</span> Zuckerman Institute, Columbia</div>
+    <div class="name">Alexis Stutzman Lewis, Ph.D.</div>
+    <div class="tagline">A genomicist working at the molecular boundary of <strong>heredity</strong> and experience — how genomes remember, and how memory becomes biology.</div>
+    <div class="cta-row">
+      <a href="#" class="btn-primary">View my work</a>
+      <a href="#" class="btn-ghost">Get in touch</a>
+    </div>
+    <div class="swatches">
+      <div class="sw" style="background:var(--paper)"></div>
+      <div class="sw" style="background:var(--ink)"></div>
+      <div class="sw" style="background:var(--plum)"></div>
+      <div class="sw" style="background:var(--blue)"></div>
+      <div class="sw" style="background:var(--sage)"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const aura = document.getElementById('cursor-aura');
+  let ax = innerWidth/2, ay = innerHeight/2, tx = ax, ty = ay;
+  addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; aura.classList.add('on'); }, {passive:true});
+  (function tick(){ ax += (tx-ax)*0.08; ay += (ty-ay)*0.08; aura.style.transform = `translate(${ax}px, ${ay}px)`; requestAnimationFrame(tick); })();
+</script>
+</body>
+</html>

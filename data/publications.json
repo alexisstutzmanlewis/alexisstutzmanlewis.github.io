@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Heterochromatic 3D genome organization is directed by HP1a- and H3K9-dependent and independent mechanisms",
+    "authors": ["Alexis V. Stutzman", "Christina A. Hill", "Robin L. Armstrong", "Riya Gohil", "Robert J. Duronio", "Jill M. Dowen", "Daniel J. McKay"],
+    "doi": "TODO: confirm full DOI (partial seen: 10.***0325-2)",
+    "year": "TODO: confirm publication year",
+    "type": "Research article",
+    "tags": ["Genomics", "D. melanogaster", "Heterochromatin", "3D genome organization"],
+    "plainLanguageSummary": null
+  },
+  {
+    "title": "Transcription-independent TFIIIC-bound sites cluster near heterochromatin boundaries within lamina-associated domains in C. elegans",
+    "authors": ["Alexis V. Stutzman", "April S. Liang", "Vera Beilinson", "Kohta Ikegami"],
+    "doi": "TODO: confirm full DOI",
+    "year": "TODO: confirm publication year",
+    "type": "Research article",
+    "tags": ["Genomics", "C. elegans", "Transcription"],
+    "plainLanguageSummary": null
+  },
+  {
+    "title": "Advancements in mapping 3D genome architecture",
+    "authors": ["Daniel J. McKay", "Alexis V. Stutzman", "Jill M. Dowen"],
+    "doi": "TODO: confirm full DOI (partial seen: ...06.002)",
+    "year": "TODO: confirm publication year",
+    "type": "Review",
+    "tags": ["Review", "Genomics", "3D genome organization"],
+    "plainLanguageSummary": "DNA is non-randomly distributed in the 3-dimensional space of the nucleus. Scientists have historically studied this non-random genome architecture by microscopy-based techniques. With the development of genomics came assays to map genome architecture with DNA-sequence level resolution. This paper reviews those assays and compares the molecular details underlying them. Assays covered: Chromosome Conformation Capture assays (including Hi-C), SPRITE, and Trac-looping."
+  },
+  {
+    "title": "Pervasive nuclear envelope ruptures precede ECM signaling and disease onset without activating cGAS-STING in Lamin-cardiomyopathy mice",
+    "authors": ["Atsuki En", "Hanumakumar Bogireddi", "Briana Thomas", "Alexis V. Stutzman", "Sachie Ikegami", "Brigitte LaForest", "Omar Almakki", "Peter Pytel", "Ivan P. Moskowitz", "Kohta Ikegami"],
+    "doi": "TODO: confirm DOI",
+    "year": "TODO: confirm publication year",
+    "type": "Research article",
+    "tags": ["TODO: confirm tags"],
+    "plainLanguageSummary": null
+  }
+]

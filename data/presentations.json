@@ -1,0 +1,20 @@
+{
+  "oral": [
+    { "title": "Interrogating a role for extracellular vesicles (EVs) in mediating intergenerational memory of stress", "venue": "Park City Winter Conference on Learning & Memory", "date": "2025-01-02" },
+    { "title": "Heterochromatic 3D genome architecture is directed by H3K9/HP1-dependent and independent mechanisms", "venue": "Fragile Nucleosome Seminar Series", "date": "2023-06-21" },
+    { "title": "Heterochromatic 3D genome architecture is directed by H3K9/HP1-dependent and independent mechanisms", "venue": "Genetics Society of America Drosophila Conference", "date": "2023-03-01", "dateEnd": "2023-03-05" },
+    { "title": "H3K9-mediated HP1 binding is required for heterochromatic genome organization", "venue": "UNC Chromatin & Epigenetics Symposium", "date": "2022-03-03" },
+    { "title": "Determining the role of the heterochromatic histone mark H3K9me3 in fruit fly 3D genome organization", "venue": "Invited Seminar, UNC Asheville Department of Biology", "date": "2021-09-30" },
+    { "title": "How and When to Add Voices", "venue": "Rosalind Franklin Society Virtual Meeting: Labs, Leaders, and Critical Connections", "date": "2020-12-16", "dateEnd": "2020-12-17" },
+    { "title": "The Creation of Black in Genetics and the Call to Action to Combat Systemic Racism in Science", "venue": "American Society for Human Genetics Annual Meeting", "date": "2020-10-29" },
+    { "title": "Lamin A/C is required for maintaining the structure and function of mature cardiomyocytes", "venue": "Midstates Consortium for Math and Science, St. Louis, MO", "date": "2017-11-10", "dateEnd": "2017-11-11" }
+  ],
+  "posters": [
+    { "title": "Interrogating the Role for Extracellular Vesicles in Intergenerational Inheritance of Olfactory Fear Conditioning", "venue": "Society for Neuroscience Conference (SfN), San Diego, CA", "date": "2025-11-15", "dateEnd": "2025-11-19" },
+    { "title": "Determining the molecular mechanisms of heritable stress-induced bias in olfactory neuron identity", "venue": "Society for Neuroscience Conference (SfN), Chicago, IL", "date": "2024-10-05", "dateEnd": "2024-10-09" },
+    { "title": "Interrogating the role of the histone mark H3K9me3 in D. melanogaster Genome Organization and Gene Regulation", "venue": "The Allied Genetics Conference (TAGC), Online", "date": "2020-04-22", "dateEnd": "2020-04-25" },
+    { "title": "Mapping 3-dimensional genome architecture in developing Drosophila melanogaster tissues", "venue": "Triangle Fly Symposium, Chapel Hill, NC", "date": "2019-05-08" },
+    { "title": "Lamin A/C is required for maintaining the structure and function of mature cardiomyocytes", "venue": "Chicago Area Undergraduate Research Symposium, DePaul University, Chicago, IL", "date": "2018-04-15" },
+    { "title": "Evidence for a transcription-independent function of Transcription Factor III C in Caenorhabditis elegans", "venue": "Chicago Area Undergraduate Research Symposium, Roosevelt University, Chicago, IL", "date": "2017-04-29" }
+  ]
+}

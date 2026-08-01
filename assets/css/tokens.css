@@ -1,0 +1,28 @@
+/*
+  Design tokens for Alexis Stutzman Lewis's site.
+  Source of truth: design-system/reference-mockup.html
+  Palette family: warm cream + botanical watercolor (mauve-plum / dusty blue / sage)
+  Type: Cormorant Garamond (headings, upright only, weight 500-600) + Jost (body/UI, weight 400-500)
+*/
+
+:root {
+  /* surfaces & text */
+  --paper: #F7F1E3;
+  --ink: #2A2A22;
+  --mid: #5A5848;
+  --rule: #E3DBC7;
+
+  /* decorative accents (washes, swatches, backgrounds) - light, blend-friendly */
+  --plum: #C7AEC9;
+  --blue: #ABC5D6;
+  --sage: #B9CBA9;
+
+  /* text-safe accents (links, emphasis, tags) - darker for contrast on --paper */
+  --plum-text: #7A5D82;
+  --blue-text: #3F647E;
+  --sage-text: #4F6B45;
+
+  /* type */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+}
