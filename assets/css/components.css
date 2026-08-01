@@ -33,6 +33,8 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { border-bottom-color: var(--rule); }
 
+.nav-brand { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+
 .nav-logo {
   font-family: var(--font-heading); font-weight: 600; font-size: 1.5rem;
   color: var(--ink); text-decoration: none;

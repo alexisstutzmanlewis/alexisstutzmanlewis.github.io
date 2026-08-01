@@ -16,6 +16,14 @@
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .cv-intro-grid { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: center; }
+  .cv-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 12px; border: 1px solid var(--rule); }
+  @media (max-width: 720px) {
+    .cv-intro-grid { grid-template-columns: 1fr; }
+    .cv-photo { order: -1; max-width: 200px; margin: 0 auto; }
+  }
+</style>
 </head>
 <body>
 <div id="cursor-aura"></div>
@@ -26,31 +34,40 @@
 </div>
 
 <nav class="site-nav" id="navbar">
-  <a href="index.html" class="nav-logo">ASL</a>
+  <div class="nav-brand">
+    <a href="index.html" class="nav-logo">AVSL</a>
+    <button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button>
+  </div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="cv.html" aria-current="page">CV</a></li>
     <li><a href="black-in-genetics.html">Black In Genetics</a></li>
     <li><a href="just-for-fun.html">Just for Fun</a></li>
     <li><a href="contact.html">Contact</a></li>
-    <li><button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button></li>
   </ul>
 </nav>
 
 <main>
   <section style="padding-top:130px;">
-    <p class="eyebrow">Curriculum Vitae</p>
-    <h1 style="font-family:var(--font-heading); font-size:2.2rem; margin:14px 0 18px;">Alexis V. Stutzman Lewis, Ph.D.</h1>
-    <p class="body-copy muted" style="margin-bottom:24px;">Postdoctoral Research Scientist, Columbia University &middot; New York, NY</p>
-    <div class="cta-row">
-      <a href="assets/documents/Stutzman_CV.pdf" class="btn-primary" download>Download CV (PDF)</a>
-      <a href="https://tinyurl.com/AlexisSL" class="btn-ghost" target="_blank" rel="noopener">Full publication &amp; presentation list &rarr;</a>
+    <div class="cv-intro-grid">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1 style="font-family:var(--font-heading); font-size:2.2rem; margin:14px 0 18px;">Alexis V. Stutzman Lewis, Ph.D.</h1>
+        <p class="body-copy muted" style="margin-bottom:24px;">Postdoctoral Research Scientist, Columbia University &middot; New York, NY</p>
+        <div class="cta-row">
+          <a href="assets/documents/Stutzman_CV.pdf" class="btn-primary" download>Download CV (PDF)</a>
+          <a href="https://tinyurl.com/AlexisSL" class="btn-ghost" target="_blank" rel="noopener">Full publication &amp; presentation list &rarr;</a>
+        </div>
+      </div>
+      <div class="cv-photo">
+        <img src="assets/images/media/cv-headshot.jpg" alt="Alexis Stutzman Lewis">
+      </div>
     </div>
   </section>
 
   <section id="my-science" class="fade-in">
     <div class="section-header"><span class="section-number">My Science</span></div>
-    <p class="body-copy">I'm a genomicist working at the interface of genetic inheritance and molecular neuroscience, with a background in molecular biology and computational analysis across mouse, human cell culture, C. elegans, and Drosophila systems. My Ph.D. work in the Dowen and McKay labs at UNC Chapel Hill showed that heterochromatic H3K9 methylation and HP1a are required to maintain global 3D genome organization. Now, as a postdoctoral research scientist in Bianca Jones Marlin's lab at Columbia's Zuckerman Institute, I study how generations remember the past — and how those memories become biology — by investigating the molecular mechanisms of intergenerational inheritance.</p>
+    <p class="body-copy">I'm a genomicist working at the intersection of inheritance and neuroscience, with a background in molecular biology and computational analysis across mouse, human cell culture, C. elegans, and Drosophila systems. My Ph.D. work in the Dowen and McKay labs at UNC Chapel Hill showed that heterochromatic H3K9 methylation and HP1a are required to maintain global 3D genome organization. Now, as a postdoctoral research scientist in Bianca Jones Marlin's lab at Columbia's Zuckerman Institute, I study how generations remember the past — and how those memories become biology — by investigating the molecular mechanisms of intergenerational inheritance.</p>
   </section>
 
   <section id="education" class="fade-in">
