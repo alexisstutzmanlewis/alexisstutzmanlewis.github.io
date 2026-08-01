@@ -1,0 +1,107 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+a { color: inherit; }
+
+img, video { max-width: 100%; display: block; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+main { position: relative; z-index: 2; }
+
+section {
+  padding: 90px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 110px;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 18px;
+}
+
+.section-label {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.section-number {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid);
+  font-weight: 500;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mid);
+  font-weight: 500;
+}
+
+.body-copy {
+  max-width: 640px;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.body-copy.muted { color: var(--mid); }
+
+/* fade-in-on-scroll, respected by prefers-reduced-motion + manual toggle in components.css */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-in.visible { opacity: 1; transform: none; }
+
+@media (max-width: 768px) {
+  section { padding: 64px 24px; scroll-margin-top: 88px; }
+}
+
+@media print {
+  #cursor-aura, .wash-field, nav, footer, .motion-toggle, .cta-row { display: none !important; }
+  body { background: #fff; color: #000; }
+  section { padding: 0 0 24px; max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .fade-in { opacity: 1; transform: none; }
+}

@@ -184,22 +184,30 @@ Website/
 - A `@media print` stylesheet on the CV page so it prints cleanly even before the PDF link is used.
 - GoatCounter analytics script tag (single `<script>`, no cookie banner needed).
 
-## 8. Build sequence (next phase)
+## 8. Build sequence
 
-Once outstanding content items in §5 are resolved (or explicitly deferred with placeholders):
-
-1. `base.css` + `components.css` — global styles, nav, buttons, cards, cursor-glow, wash backgrounds,
-   motion toggle, reduced-motion handling.
-2. `main.js` — shared interaction behavior.
-3. Home page.
-4. CV page + `render-cv.js` + PDF link.
-5. Black In Genetics page.
-6. Just for Fun page.
-7. Contact page + Netlify form wiring.
-8. Favicon, OG image, meta tags, sitemap/robots.
-9. Cross-browser/mobile pass, accessibility pass (reduced motion, contrast, keyboard nav).
-10. Connect GitHub repo to Netlify, deploy to `*.netlify.app`, review live.
-11. Buy + connect custom domain (once name is chosen).
+1. [x] `base.css` + `components.css` — global styles, nav, buttons, cards, cursor-glow, wash
+   backgrounds, motion toggle, reduced-motion handling.
+2. [x] `main.js` — shared interaction behavior (cursor-glow, photo tilt, veil, motion toggle,
+   scroll-reveal via `window.observeFadeIns()` — re-callable so dynamically fetched content can
+   register for the fade-in animation too).
+3. [x] Home page (`index.html`).
+4. [x] CV page (`cv.html`) + `render-cv.js` + PDF download link.
+5. [x] Black In Genetics page (`black-in-genetics.html`) + `render-black-in-genetics.js`.
+6. [x] Just for Fun page (`just-for-fun.html`) + `render-just-for-fun.js`.
+7. [x] Contact page (`contact.html`) + Netlify form (name/email/message + honeypot) + LinkedIn link.
+8. [x] Favicon (SVG monogram), OG tags (reusing headshot/logo/personal-photo per page), meta
+   descriptions, `sitemap.xml`/`robots.txt`. **Analytics is a placeholder** — GoatCounter requires
+   a free account signup only the user can do; a commented-out script tag with instructions is at
+   the bottom of every page's `<body>`, ready to uncomment once a site code exists.
+9. [x] Local testing pass: served via a local static server (see `.claude/launch.json`), verified
+   all 5 pages load with zero console errors and zero failed network requests, verified the
+   motion toggle and reduced-motion path, verified responsive layout at 1280px and ~700px widths.
+   **Not yet done:** a real cross-browser pass (Safari/Firefox) and a screen-reader/keyboard-nav
+   audit — recommended before or shortly after launch.
+10. [ ] Connect a GitHub repo to Netlify, deploy to `*.netlify.app`, review live. Requires the user
+    to create/authorize the GitHub remote and the Netlify account connection.
+11. [ ] Buy + connect custom domain (alexis-stutzmanlewis.com, once availability is confirmed).
 
 ## 9. Open items requiring user input before/during build
 

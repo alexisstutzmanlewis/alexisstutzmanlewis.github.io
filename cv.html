@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Alexis Stutzman Lewis, Ph.D.</title>
+<meta name="description" content="Curriculum vitae of Alexis Stutzman Lewis, Ph.D. — education, publications, presentations, and service in genomics and molecular neuroscience.">
+<meta property="og:title" content="CV — Alexis Stutzman Lewis, Ph.D.">
+<meta property="og:image" content="assets/images/media/headshot.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div id="cursor-aura"></div>
+<div class="wash-field">
+  <div class="wash wash-1"></div>
+  <div class="wash wash-2"></div>
+  <div class="wash wash-3"></div>
+</div>
+
+<nav class="site-nav" id="navbar">
+  <a href="index.html" class="nav-logo">ASL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html" aria-current="page">CV</a></li>
+    <li><a href="black-in-genetics.html">Black In Genetics</a></li>
+    <li><a href="just-for-fun.html">Just for Fun</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button></li>
+  </ul>
+</nav>
+
+<main>
+  <section style="padding-top:130px;">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1 style="font-family:var(--font-heading); font-size:2.2rem; margin:14px 0 18px;">Alexis V. Stutzman Lewis, Ph.D.</h1>
+    <p class="body-copy muted" style="margin-bottom:24px;">Postdoctoral Research Scientist, Columbia University &middot; New York, NY</p>
+    <div class="cta-row">
+      <a href="assets/documents/Stutzman_CV.pdf" class="btn-primary" download>Download CV (PDF)</a>
+      <a href="https://tinyurl.com/AlexisSL" class="btn-ghost" target="_blank" rel="noopener">Full publication &amp; presentation list &rarr;</a>
+    </div>
+  </section>
+
+  <section id="my-science" class="fade-in">
+    <div class="section-header"><span class="section-number">My Science</span></div>
+    <p class="body-copy">I'm a genomicist working at the interface of genetic inheritance and molecular neuroscience, with a background in molecular biology and computational analysis across mouse, human cell culture, C. elegans, and Drosophila systems. My Ph.D. work in the Dowen and McKay labs at UNC Chapel Hill showed that heterochromatic H3K9 methylation and HP1a are required to maintain global 3D genome organization. Now, as a postdoctoral research scientist in Bianca Jones Marlin's lab at Columbia's Zuckerman Institute, I study how generations remember the past — and how those memories become biology — by investigating the molecular mechanisms of intergenerational inheritance.</p>
+  </section>
+
+  <section id="education" class="fade-in">
+    <div class="section-header"><span class="section-number">Education</span></div>
+    <div class="data-list" id="education-list"></div>
+  </section>
+
+  <section id="grants" class="fade-in">
+    <div class="section-header"><span class="section-number">Grants &amp; Fellowships</span></div>
+    <div class="data-list" id="grants-list"></div>
+  </section>
+
+  <section id="awards" class="fade-in">
+    <div class="section-header"><span class="section-number">Awards, Honors &amp; Recognitions</span></div>
+    <div class="data-list" id="awards-list"></div>
+  </section>
+
+  <section id="publications" class="fade-in">
+    <div class="section-header"><span class="section-number">Publications</span></div>
+    <div class="data-list" id="publications-list"></div>
+  </section>
+
+  <section id="presentations" class="fade-in">
+    <div class="section-header"><span class="section-number">Presentations</span></div>
+    <h3 style="font-size:1.05rem; margin-bottom:10px;">Select Oral Presentations</h3>
+    <div class="data-list" id="oral-list" style="margin-bottom:40px;"></div>
+    <h3 style="font-size:1.05rem; margin-bottom:10px;">Select Poster Presentations</h3>
+    <div class="data-list" id="poster-list"></div>
+  </section>
+
+  <section id="media" class="fade-in">
+    <div class="section-header"><span class="section-number">In the Media</span></div>
+    <div class="data-list" id="media-list"></div>
+  </section>
+
+  <section id="teaching" class="fade-in">
+    <div class="section-header"><span class="section-number">Teaching Experience</span></div>
+    <div class="data-list" id="teaching-list"></div>
+  </section>
+
+  <section id="service" class="fade-in">
+    <div class="section-header"><span class="section-number">Service</span></div>
+    <div class="data-list" id="service-list"></div>
+  </section>
+
+  <section id="mentoring" class="fade-in">
+    <div class="section-header"><span class="section-number">Mentoring</span></div>
+    <div class="data-list" id="mentoring-list"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-name">Alexis Stutzman Lewis, Ph.D.</span>
+  <span class="footer-copy">&copy; 2026 &middot; New York, NY</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render-cv.js"></script>
+<!-- TODO: analytics — sign up free at https://www.goatcounter.com, then uncomment and replace MYCODE:
+<script data-goatcounter="https://MYCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>

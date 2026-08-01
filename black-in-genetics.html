@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black In Genetics — Alexis Stutzman Lewis, Ph.D.</title>
+<meta name="description" content="Black In Genetics, founded by Alexis Stutzman Lewis in 2020 — a nonprofit supporting the retention and recruitment of Black-identifying academics, professionals, and trainees in genetics.">
+<meta property="og:title" content="Black In Genetics — Alexis Stutzman Lewis, Ph.D.">
+<meta property="og:image" content="assets/images/media/black-in-genetics-logo.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .big-header { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+  .big-logo { width: 84px; height: 84px; object-fit: contain; border-radius: 12px; background: #fff; border: 1px solid var(--rule); padding: 8px; }
+  .highlight-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+  .highlight-list li { padding-left: 22px; position: relative; color: var(--ink); font-size: 0.96rem; line-height: 1.6; }
+  .highlight-list li::before { content: ''; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--plum-text); }
+</style>
+</head>
+<body>
+<div id="cursor-aura"></div>
+<div class="wash-field">
+  <div class="wash wash-1"></div>
+  <div class="wash wash-2"></div>
+  <div class="wash wash-3"></div>
+</div>
+
+<nav class="site-nav" id="navbar">
+  <a href="index.html" class="nav-logo">ASL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="black-in-genetics.html" aria-current="page">Black In Genetics</a></li>
+    <li><a href="just-for-fun.html">Just for Fun</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button></li>
+  </ul>
+</nav>
+
+<main>
+  <section style="padding-top:130px;">
+    <div class="big-header">
+      <img src="assets/images/media/black-in-genetics-logo.png" alt="Black In Genetics logo" class="big-logo">
+      <div>
+        <p class="eyebrow">Founder &amp; President &middot; Est. 2020</p>
+        <h1 style="font-family:var(--font-heading); font-size:2rem; margin-top:6px;">Black In Genetics</h1>
+      </div>
+    </div>
+    <p class="body-copy" id="big-bio"></p>
+    <ul class="highlight-list" id="big-highlights"></ul>
+    <div class="cta-row" style="margin-top:36px;">
+      <a href="https://blackingenetics.com" class="btn-primary" target="_blank" rel="noopener">Visit blackingenetics.com</a>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <div class="section-header"><span class="section-number">Related presentations</span></div>
+    <div class="data-list" id="big-presentations"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-name">Alexis Stutzman Lewis, Ph.D.</span>
+  <span class="footer-copy">&copy; 2026 &middot; New York, NY</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render-black-in-genetics.js"></script>
+<!-- TODO: analytics — sign up free at https://www.goatcounter.com, then uncomment and replace MYCODE:
+<script data-goatcounter="https://MYCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>

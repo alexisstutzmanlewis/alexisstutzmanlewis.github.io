@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just for Fun — Alexis Stutzman Lewis, Ph.D.</title>
+<meta name="description" content="The personal side of Alexis Stutzman Lewis — research organisms, life outside the lab, and a dedication to Rosie.">
+<meta property="og:title" content="Just for Fun — Alexis Stutzman Lewis, Ph.D.">
+<meta property="og:image" content="assets/images/media/personal-photo.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .fun-block { display: grid; grid-template-columns: 320px 1fr; gap: 40px; align-items: center; margin-bottom: 64px; }
+  .fun-block:nth-child(even) .fun-media { order: 2; }
+  .fun-media { border-radius: 14px; overflow: hidden; border: 1px solid var(--rule); }
+  .fun-media img, .fun-media video { width: 100%; height: auto; display: block; }
+  .fun-heading { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; margin-bottom: 12px; }
+  .fun-caption { color: var(--mid); font-size: 0.95rem; line-height: 1.75; }
+  .fun-years { font-size: 0.78rem; color: var(--mid); letter-spacing: 0.08em; margin-top: 8px; display: block; }
+  .video-fallback { font-size: 0.8rem; margin-top: 8px; display: block; }
+  @media (max-width: 720px) {
+    .fun-block { grid-template-columns: 1fr; }
+    .fun-block:nth-child(even) .fun-media { order: 0; }
+  }
+</style>
+</head>
+<body>
+<div id="cursor-aura"></div>
+<div class="wash-field">
+  <div class="wash wash-1"></div>
+  <div class="wash wash-2"></div>
+  <div class="wash wash-3"></div>
+</div>
+
+<nav class="site-nav" id="navbar">
+  <a href="index.html" class="nav-logo">ASL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="black-in-genetics.html">Black In Genetics</a></li>
+    <li><a href="just-for-fun.html" aria-current="page">Just for Fun</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button></li>
+  </ul>
+</nav>
+
+<main>
+  <section style="padding-top:130px;">
+    <p class="eyebrow">Just for Fun</p>
+    <h1 style="font-family:var(--font-heading); font-size:2rem; margin:14px 0 30px;">Outside the lab</h1>
+    <div id="fun-blocks"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="footer-name">Alexis Stutzman Lewis, Ph.D.</span>
+  <span class="footer-copy">&copy; 2026 &middot; New York, NY</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render-just-for-fun.js"></script>
+<!-- TODO: analytics — sign up free at https://www.goatcounter.com, then uncomment and replace MYCODE:
+<script data-goatcounter="https://MYCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+</body>
+</html>
