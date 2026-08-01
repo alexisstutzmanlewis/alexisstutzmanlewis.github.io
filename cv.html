@@ -18,7 +18,11 @@
 <link rel="stylesheet" href="assets/css/components.css">
 <style>
   .cv-intro-grid { display: grid; grid-template-columns: 1fr 220px; gap: 40px; align-items: center; }
-  .cv-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 12px; border: 1px solid var(--rule); }
+  .cv-photo img {
+    width: 100%; height: auto; border-radius: 50%;
+    -webkit-mask-image: radial-gradient(circle, black 62%, transparent 100%);
+    mask-image: radial-gradient(circle, black 62%, transparent 100%);
+  }
   @media (max-width: 720px) {
     .cv-intro-grid { grid-template-columns: 1fr; }
     .cv-photo { order: -1; max-width: 200px; margin: 0 auto; }
@@ -58,7 +62,7 @@
         </div>
       </div>
       <div class="cv-photo">
-        <img src="assets/images/media/cv-headshot.jpg" alt="Alexis Stutzman Lewis">
+        <img src="assets/images/media/cv-headshot-circle.png" alt="Alexis Stutzman Lewis">
       </div>
     </div>
   </section>
