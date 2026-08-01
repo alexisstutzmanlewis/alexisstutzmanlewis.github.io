@@ -143,7 +143,8 @@ DOM at load time — content edits going forward mean editing these files, never
 ```
 Website/
 ├── .gitignore
-├── netlify.toml
+├── robots.txt
+├── sitemap.xml
 ├── IMPLEMENTATION_PLAN.md        ← this file
 ├── README.md
 ├── index.html                    (Home)
@@ -206,10 +207,13 @@ Website/
    motion toggle and reduced-motion path, verified responsive layout at 1280px and ~700px widths.
    **Not yet done:** a real cross-browser pass (Safari/Firefox) and a screen-reader/keyboard-nav
    audit — recommended before or shortly after launch.
-10. [ ] Push to the user's existing private repo (github.com/14stutzmanav/14stutzmanav.github.io),
-    enable GitHub Pages, review live at `14stutzmanav.github.io`. Requires the user to authenticate
-    `gh` themselves (in progress) — repo currently private, contents not yet inspected.
-11. [ ] Buy + connect custom domain (alexis-stutzmanlewis.com, once availability is confirmed).
+10. [x] Pushed to github.com/14stutzmanav/14stutzmanav.github.io (force-pushed over an empty,
+    abandoned prior attempt — user confirmed). Repo made **public** (required for GitHub Pages on
+    the free plan — private-repo Pages needs a paid plan). GitHub Pages enabled, branch build from
+    `main` root. Live at https://14stutzmanav.github.io/ once the push finishes deploying.
+11. [ ] Sign up at formspree.io and swap `YOUR_FORM_ID` in `contact.html` for the contact form to work.
+12. [ ] Buy + connect custom domain (alexis-stutzmanlewis.com, once availability is confirmed) —
+    would need a `CNAME` file added at the repo root pointing to the domain.
 
 ## 9. Open items requiring user input before/during build
 

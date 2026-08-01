@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alexis-stutzmanlewis.com/sitemap.xml
+Sitemap: https://14stutzmanav.github.io/sitemap.xml
