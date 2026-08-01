@@ -100,10 +100,9 @@ Publications, presentations, and CV data are now sourced from the user's officia
 - [`data/publications.json`](data/publications.json) — 6 entries, full DOIs/PMIDs/years confirmed
   from the CV (includes a 2025 bioRxiv preprint not in the original Notion page).
 - [`data/presentations.json`](data/presentations.json) — `oral` and `posters` arrays; enriched
-  with co-presenter names from the Black In Genetics biosketch excerpt. **One unresolved
-  discrepancy:** the CV lists the ASHG 2020 talk ("The Creation of Black in Genetics...") as
-  October 29, 2020, but the biosketch excerpt says October 27, 2020 — flagged with a `note` field
-  on that entry; needs the user to confirm the correct date.
+  with co-presenter names from the Black In Genetics biosketch excerpt. The ASHG 2020 talk
+  ("The Creation of Black in Genetics...") date conflict between the CV (Oct 29) and biosketch
+  (Oct 27) is resolved — user confirmed the talk took place Monday, October 26, 2020.
 - [`data/cv.json`](data/cv.json) — header info, education, grants/fellowships, awards/honors,
   teaching experience, service, and mentoring — all from the CV.
 - [`data/black-in-genetics.json`](data/black-in-genetics.json) — full biosketch paragraph, key
@@ -199,7 +198,7 @@ Once outstanding content items in §5 are resolved (or explicitly deferred with 
 - [x] Headshot, Black In Genetics logo — placed in `assets/images/media/`
 - [x] Black In Genetics page content — full biosketch text provided, in `data/black-in-genetics.json`
 - [x] Contact form fields — delegated to Claude
-- [ ] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy (see §5)
+- [x] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
 - [ ] CV PDF file for the "Download CV" button (confirm the source PDF can be used as-is)
 - [ ] A second, more personal photo for Just for Fun (candidates in the headshots folder)
 - [ ] Research imagery/video for Just for Fun (fly imaginal disc photo, C. elegans video)
