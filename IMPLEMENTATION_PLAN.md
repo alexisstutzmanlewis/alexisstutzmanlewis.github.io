@@ -110,6 +110,9 @@ Publications, presentations, and CV data are now sourced from the user's officia
   blackingenetics.com.
 - [`data/media.json`](data/media.json) — 2 entries (Front Line Genomics interview, NC DNA Day
   article), from the earlier Notion pass; still accurate.
+- [`data/just-for-fun.json`](data/just-for-fun.json) — 4 entries: wing imaginal disc, C. elegans
+  embryo, "outside the lab" reflection, and the Rosie dedication (with a placeholder Wikipedia
+  link for "learn more about Rosalind Franklin" — swap if the original had a specific target).
 
 Each page's JS (`assets/js/render-cv.js`, etc.) fetches the relevant JSON and renders it into the
 DOM at load time — content edits going forward mean editing these files, never the HTML/CSS.
@@ -117,13 +120,17 @@ DOM at load time — content edits going forward mean editing these files, never
 **Assets received and placed:**
 - `assets/images/media/headshot.jpg` — primary headshot (white background, resized for web)
 - `assets/images/media/black-in-genetics-logo.png` — org logo
+- `assets/images/research/imaginal-disc.gif` — wing imaginal disc microscopy
+- `assets/images/research/celegans-embryo.mov` — C. elegans embryo cell division video
+  (**needs conversion to `.mp4`/`.webm` during build** — `.mov` isn't reliably playable in
+  Chrome/Firefox; `ffmpeg` isn't installed locally, so this is a build-phase task)
 
 **Still open:**
-- Confirm the Oct 27 vs. Oct 29, 2020 date discrepancy noted above
+- [x] Resolved: Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
+- [x] Just for Fun media (imaginal disc GIF, C. elegans video) — placed; video needs format conversion
 - CV as a downloadable PDF (the source CV PDF itself can likely be used directly — confirm)
 - A second, more personal/candid photo for the Just for Fun page (candidates exist in
-  `/Users/alexisv7/Documents/Professional Headshots/Favorite Headshots/`)
-- Research imagery/video (fly imaginal disc photo, C. elegans embryo video) for Just for Fun
+  `/Users/alexisv7/Documents/Professional Headshots/Favorite Headshots/`) — optional
 - Domain availability check for **alexis-stutzmanlewis.com**
 - Contact form fields — delegated to Claude to design; user will request edits after reviewing
 
@@ -199,7 +206,7 @@ Once outstanding content items in §5 are resolved (or explicitly deferred with 
 - [x] Black In Genetics page content — full biosketch text provided, in `data/black-in-genetics.json`
 - [x] Contact form fields — delegated to Claude
 - [x] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
+- [x] Research imagery/video for Just for Fun — imaginal disc GIF + C. elegans video, placed
 - [ ] CV PDF file for the "Download CV" button (confirm the source PDF can be used as-is)
-- [ ] A second, more personal photo for Just for Fun (candidates in the headshots folder)
-- [ ] Research imagery/video for Just for Fun (fly imaginal disc photo, C. elegans video)
+- [ ] A second, more personal photo for Just for Fun (candidates in the headshots folder) — optional
 - [ ] Final bio/research-statement copy for Home + CV (can draft from CV/biosketch and refine)

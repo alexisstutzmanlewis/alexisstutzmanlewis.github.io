@@ -1,0 +1,25 @@
+[
+  {
+    "heading": "Wing imaginal discs",
+    "media": "assets/images/research/imaginal-disc.gif",
+    "mediaType": "gif",
+    "caption": "In my PhD work, I studied D. melanogaster imaginal discs, which are tiny organs inside larvae that will eventually develop into adult appendages, such as the wing or the leg. Here, we're looking at a wing imaginal disc treated with DNA-staining dye and fluorescently-tagged antibodies to a nuclear protein."
+  },
+  {
+    "heading": "C. elegans embryo",
+    "media": "assets/images/research/celegans-embryo.mov",
+    "mediaType": "video",
+    "note": "TODO: convert .mov to .mp4 (+ ideally .webm) during build for reliable cross-browser playback — Chrome/Firefox don't support .mov well",
+    "caption": "My first paper studied a transcription-independent role for a transcription factor in C. elegans. These nematodes are an excellent model system — their bodies are transparent, they can easily be genetically modified, and egg-laying animals are hermaphrodites, which means they can clone themselves! This video I filmed highlights another major benefit to studying C. elegans: they have highly predictable developmental patterns. Here, you can watch one of the animal's earliest cell divisions!"
+  },
+  {
+    "heading": "Outside the lab",
+    "caption": "When I'm not tending to mice, analyzing data, or sitting at a microscope, I can most likely be found engaging with my community or enjoying the latest reality TV show."
+  },
+  {
+    "heading": "Dedicated to Rosie",
+    "caption": "Rosalind (Rosie) was a 4.5lb teacup Yorkie who enjoyed chicken breast and long walks in the park. She was named after Rosalind Franklin, whose work in X-ray crystallography uncovered the double helix structure of DNA.",
+    "years": "2009–2024",
+    "relatedLink": { "label": "Learn more about Rosalind Franklin", "url": "https://en.wikipedia.org/wiki/Rosalind_Franklin" }
+  }
+]
