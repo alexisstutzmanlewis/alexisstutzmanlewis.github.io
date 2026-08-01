@@ -45,18 +45,23 @@ reference site's nav pattern but pointing to pages, not anchors).
    washes + cursor glow) lives here.
 2. **CV** (`cv.html`) — the core professional record:
    - Research statement ("My Science")
-   - Education / positions timeline — **open item: need full timeline (institutions, dates, degrees, honors)**
+   - Education, grants/fellowships, awards/honors, teaching, service, mentoring — all from `data/cv.json`
    - Publications (simple chronological list, tags shown as labels, not filterable)
    - Presentations & posters (oral talks + posters, chronological)
    - In the Media (press/interviews, as a subsection here)
-   - Prominent "Download CV (PDF)" button, alongside the full interactive web version
+   - Prominent "Download CV (PDF)" button (`assets/documents/Stutzman_CV.pdf`), alongside the
+     full interactive web version
 3. **Black In Genetics** (`black-in-genetics.html`) — feature page for the org founded in 2020;
-   mission, story, link out to blackingenetics.com. **Open item: how much content vs. just a
-   feature-and-link?**
+   full biosketch paragraph + highlights + link out to blackingenetics.com (content finalized,
+   see `data/black-in-genetics.json`).
 4. **Just for Fun** (`just-for-fun.html`) — personal content: research-organism photos/video
-   (fly imaginal disc, C. elegans embryo video), "outside the lab" reflections, dedication to Rosie.
-5. **Contact** (`contact.html`) — Netlify-powered contact form (name/email/message) plus direct
-   email and LinkedIn links. **Open item: confirm exact form fields wanted.**
+   (fly imaginal disc, C. elegans embryo video), a candid personal photo, "outside the lab"
+   reflections, dedication to Rosie.
+5. **Contact** (`contact.html`) — Netlify-powered contact form (name/email/message) plus a
+   LinkedIn link. **Note:** the CV's "online" version deliberately omits the user's direct
+   Columbia email (`avs2177@columbia.edu`) — following that same privacy choice, this plan
+   assumes the contact form (not a public raw email address) is the primary contact path on the
+   site. Flag if a public email should be shown after all.
 
 ## 4. Design system (locked)
 
@@ -207,6 +212,10 @@ Once outstanding content items in §5 are resolved (or explicitly deferred with 
 - [x] Contact form fields — delegated to Claude
 - [x] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
 - [x] Research imagery/video for Just for Fun — imaginal disc GIF + C. elegans video, placed
-- [ ] CV PDF file for the "Download CV" button (confirm the source PDF can be used as-is)
-- [ ] A second, more personal photo for Just for Fun (candidates in the headshots folder) — optional
+- [x] CV PDF file for the "Download CV" button — using `260731_Stutzman_CV-online.pdf` (the
+      privacy-conscious "online" version, no direct email listed), at `assets/documents/Stutzman_CV.pdf`
+- [x] A second, more personal photo for Just for Fun — `fullsizeoutput_3985.jpeg` chosen, placed
+      as `assets/images/media/personal-photo.jpg`
+- [ ] Confirm: should the Contact page show a public email address, or rely on the form + LinkedIn
+      only (current assumption, matching the CV's own privacy choice)?
 - [ ] Final bio/research-statement copy for Home + CV (can draft from CV/biosketch and refine)

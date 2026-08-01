@@ -4,8 +4,8 @@
     "title": "Postdoctoral Research Scientist",
     "institution": "Columbia University",
     "location": "New York, NY 10027",
-    "email": "avs2177@columbia.edu",
-    "fullListUrl": "https://tinyurl.com/AlexisSL"
+    "fullListUrl": "https://tinyurl.com/AlexisSL",
+    "pdfUrl": "assets/documents/Stutzman_CV.pdf"
   },
   "education": [
     { "date": "2024–present", "title": "Postdoctoral Research Scientist", "org": "Columbia University", "detail": "Advisor: Bianca Jones Marlin" },
@@ -46,6 +46,8 @@
   "mentoring": [
     { "name": "Ariana Reid", "role": "Undergraduate", "org": "University of North Carolina at Chapel Hill" },
     { "name": "Glennis Cho", "role": "Undergraduate", "org": "Barnard College" },
-    { "name": "Camaria Polk", "role": "Undergraduate", "org": "Barnard College" }
+    { "name": "Camaria Polk", "role": "Undergraduate", "org": "Barnard College" },
+    { "name": "Leo Matsuura", "role": "Undergraduate", "org": "McGill University" },
+    { "name": "Arya Shah", "role": "Undergraduate", "org": "Bennington College" }
   ]
 }
