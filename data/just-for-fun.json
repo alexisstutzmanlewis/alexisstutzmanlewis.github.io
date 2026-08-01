@@ -7,9 +7,8 @@
   },
   {
     "heading": "C. elegans embryo",
-    "media": "assets/images/research/celegans-embryo.mov",
+    "media": "assets/images/research/celegans-embryo.mp4",
     "mediaType": "video",
-    "note": "TODO: convert .mov to .mp4 (+ ideally .webm) during build for reliable cross-browser playback — Chrome/Firefox don't support .mov well",
     "caption": "My first paper studied a transcription-independent role for a transcription factor in C. elegans. These nematodes are an excellent model system — their bodies are transparent, they can easily be genetically modified, and egg-laying animals are hermaphrodites, which means they can clone themselves! This video I filmed highlights another major benefit to studying C. elegans: they have highly predictable developmental patterns. Here, you can watch one of the animal's earliest cell divisions!"
   },
   {

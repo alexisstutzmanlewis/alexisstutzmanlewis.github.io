@@ -17,11 +17,17 @@
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/components.css">
 <style>
-  .big-header { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
-  .big-logo { width: 84px; height: 84px; object-fit: contain; border-radius: 12px; background: #fff; border: 1px solid var(--rule); padding: 8px; }
+  .big-intro-grid { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
+  .big-logo { width: 100%; height: auto; display: block; }
+  .big-ceremony-photo { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); margin-top: 24px; display: block; }
+  .big-ceremony-caption { font-size: 0.78rem; color: var(--mid); line-height: 1.6; margin-top: 10px; }
   .highlight-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
   .highlight-list li { padding-left: 22px; position: relative; color: var(--ink); font-size: 0.96rem; line-height: 1.6; }
   .highlight-list li::before { content: ''; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--plum-text); }
+  @media (max-width: 780px) {
+    .big-intro-grid { grid-template-columns: 1fr; }
+    .big-logo-col { order: -1; max-width: 240px; margin: 0 auto; }
+  }
 </style>
 </head>
 <body>
@@ -46,23 +52,37 @@
 
 <main>
   <section style="padding-top:130px;">
-    <div class="big-header">
-      <img src="assets/images/media/black-in-genetics-logo.png" alt="Black In Genetics logo" class="big-logo">
+    <div class="big-intro-grid">
       <div>
         <p class="eyebrow">Founder &amp; President &middot; Est. 2020</p>
-        <h1 style="font-family:var(--font-heading); font-size:2rem; margin-top:6px;">Black In Genetics</h1>
+        <h1 style="font-family:var(--font-heading); font-size:2rem; margin:6px 0 18px;">Black In Genetics</h1>
+        <p class="body-copy" id="big-bio"></p>
+        <ul class="highlight-list" id="big-highlights"></ul>
+        <div class="cta-row" style="margin-top:36px;">
+          <a href="https://blackingenetics.com" class="btn-primary" target="_blank" rel="noopener">Visit blackingenetics.com</a>
+        </div>
       </div>
-    </div>
-    <p class="body-copy" id="big-bio"></p>
-    <ul class="highlight-list" id="big-highlights"></ul>
-    <div class="cta-row" style="margin-top:36px;">
-      <a href="https://blackingenetics.com" class="btn-primary" target="_blank" rel="noopener">Visit blackingenetics.com</a>
+      <div class="big-logo-col">
+        <img src="assets/images/media/black-in-genetics-logo.png" alt="Black In Genetics logo" class="big-logo">
+        <img id="big-ceremony-img" class="big-ceremony-photo" alt="">
+        <p class="big-ceremony-caption" id="big-ceremony-caption"></p>
+      </div>
     </div>
   </section>
 
   <section class="fade-in">
-    <div class="section-header"><span class="section-number">Related presentations</span></div>
+    <div class="section-header"><span class="section-number">Awards</span></div>
+    <div class="data-list" id="big-awards"></div>
+  </section>
+
+  <section class="fade-in">
+    <div class="section-header"><span class="section-number">Speaking engagements</span></div>
     <div class="data-list" id="big-presentations"></div>
+  </section>
+
+  <section class="fade-in">
+    <div class="section-header"><span class="section-number">In the press</span></div>
+    <div class="data-list" id="big-press"></div>
   </section>
 </main>
 

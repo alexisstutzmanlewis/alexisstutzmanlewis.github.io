@@ -13,10 +13,13 @@ body.washes-strong .wash { opacity: 0.55; }
 
 /* ============ CURSOR GLOW (sitewide) ============ */
 #cursor-aura {
-  position: fixed; top: 0; left: 0; width: 420px; height: 420px; margin: -210px 0 0 -210px;
-  border-radius: 50%; pointer-events: none; z-index: 1; filter: blur(18px); opacity: 0;
-  background: radial-gradient(circle, rgba(199,174,201,0.30) 0%, rgba(171,197,214,0.22) 40%, rgba(185,203,169,0.16) 65%, transparent 75%);
-  transition: opacity 0.6s ease;
+  position: fixed; top: 0; left: 0; width: 520px; height: 520px; margin: -260px 0 0 -260px;
+  border-radius: 50%; pointer-events: none; z-index: 1; filter: blur(46px); opacity: 0;
+  background:
+    radial-gradient(circle at 48% 52%, rgba(199,174,201,0.24) 0%, rgba(199,174,201,0.10) 35%, transparent 62%),
+    radial-gradient(circle at 58% 42%, rgba(171,197,214,0.18) 0%, transparent 55%),
+    radial-gradient(circle at 40% 60%, rgba(185,203,169,0.16) 0%, transparent 55%);
+  transition: opacity 0.8s ease;
 }
 #cursor-aura.on { opacity: 1; }
 body.motion-off #cursor-aura { display: none; }

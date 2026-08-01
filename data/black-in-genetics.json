@@ -4,15 +4,30 @@
   "role": "Founder; Current President",
   "logo": "assets/images/media/black-in-genetics-logo.png",
   "externalUrl": "https://blackingenetics.com",
-  "bio": "According to a recent study (Nguyen et al. 2023) the representation of Black or African Americans in academia is disproportionately low, with fewer than 2% of all NIH-funded laboratories being led by Black or African American scientific investigators. Genetics is a field whose data has been misused to discriminate against groups of people throughout history, highlighting the field's need for diverse voices. As a Black woman and an academic, I understand the immense value in increasing representation of diverse individuals in science by fostering communities for them to find support and belonging. Towards this end, I founded Black In Genetics, a nonprofit dedicated to improving the retention and recruitment rates of Black-identifying academics, professionals and trainees who study genetics. We provide mentoring and financial support in the form of an annual fellowship, hosting networking and social activities, and offering a platform to promote the work and voices of Black-identifying genetics professionals and trainees. Black In Genetics' success in creating a community for Black-identifying individuals in the genetics community to connect has garnered funding and institutional support from the Chan Zuckerberg Initiative. Furthermore, Black In Genetics was recently recognized for our outstanding leadership and service in the scientific community by the United Negro College Fund's Ernest E. Just Life Science Society at their Celebration of African Americans in the Life Sciences hosted at the National Museum of African American History and Culture in Washington, DC.",
+  "bioHtml": "According to a recent study (<a href=\"TODO_PAPER_URL\" target=\"_blank\" rel=\"noopener\">Nguyen et al. 2023</a>) the representation of Black or African Americans in academia is disproportionately low, with fewer than 2% of all NIH-funded laboratories being led by Black or African American scientific investigators. Genetics is a field whose data has been misused to discriminate against groups of people throughout history, highlighting the field's need for diverse voices. As a Black woman and an academic, I understand the immense value in increasing representation of diverse individuals in science by fostering communities for them to find support and belonging. Towards this end, I founded Black In Genetics, a nonprofit dedicated to improving the retention and recruitment rates of Black-identifying academics, professionals and trainees who study genetics. We provide mentoring and financial support in the form of an annual fellowship, hosting networking and social activities, and offering a platform to promote the work and voices of Black-identifying genetics professionals and trainees. Black In Genetics' success in creating a community for Black-identifying individuals in the genetics community to connect has garnered funding and institutional support from the Chan Zuckerberg Initiative. Furthermore, Black In Genetics was recently recognized for our outstanding leadership and service in the scientific community by the United Negro College Fund's Ernest E. Just Life Science Society at their Celebration of African Americans in the Life Sciences hosted at the National Museum of African American History and Culture in Washington, DC.",
   "highlights": [
     "Founded 2020 as a nonprofit supporting Black-identifying academics, professionals, and trainees in genetics",
     "Provides an annual fellowship, mentoring, financial support, and networking/social programming",
     "Funded and institutionally supported by the Chan Zuckerberg Initiative (2022–2024)",
     "Recognized by the United Negro College Fund's Ernest E. Just Life Science Society at the National Museum of African American History and Culture, Washington, DC"
   ],
+  "awards": [
+    { "date": "2023–2024", "title": "UNCF and Ernest E. Just Life Science Society Award for Outstanding Leadership and Service in the Life Sciences", "detail": "Awarded to BlackInGenetics" },
+    { "date": "2022–2024", "title": "CZI Science", "detail": "Awarded to BlackInGenetics" }
+  ],
+  "ceremonyPhoto": {
+    "src": "assets/images/media/uncf-award-ceremony.jpg",
+    "alt": "Group photo of award recipients on stage at the Celebration of African Americans in the Life Sciences",
+    "caption": "Recipients of the UNCF and E.E. Just Life Science Society Award for Outstanding Leadership and Service in the Life Sciences, at the Celebration of African Americans in the Life Sciences awards ceremony, Smithsonian National Museum of African American History and Culture, March 2024."
+  },
   "relatedPresentations": [
     { "title": "How and When to Add Voices", "venue": "Rosalind Franklin Society Virtual Meeting", "date": "2020-12-16" },
     { "title": "The Creation of Black in Genetics and the Call to Action to Combat Systemic Racism in Science", "venue": "American Society for Human Genetics Annual Meeting", "date": "2020-10-26" }
+  ],
+  "press": [
+    { "date": "2020-08-18", "title": "Alexis Stutzman graduate student in Dowen and McKay labs founds #BlackInGeneticsWeek", "outlet": "UNC Department of Genetics", "url": "https://www.med.unc.edu/genetics/alexis-stutzman-graduate-student-in-dowen-lab-founds-blackingeneticsweek/" },
+    { "date": "2020-08", "dateApprox": true, "title": "What's the BIG deal? Thoughts on the BIG week with co-organizers Alex and Markia", "outlet": "Skype a Scientist", "url": "https://youtu.be/jAl7A4a4cPo", "videoUrl": "https://youtu.be/jAl7A4a4cPo" },
+    { "date": "2020-08-20", "title": "A Hashtag Starts a Movement to End Systemic Racism in Science", "outlet": "Genetic Engineering & Biotechnology News (GEN)", "author": "Julianna LeMieux, PhD", "url": "https://www.genengnews.com/insights/a-hashtag-starts-a-movement-to-end-systemic-racism-in-science/" },
+    { "date": "2021-10-26", "title": "A Spotlight On: Black in Genetics — Alexis Stutzman and Markia Smith", "outlet": "Front Line Genomics", "url": "https://frontlinegenomics.com/a-spotlight-on-black-in-genetics-alexis-stutzman-and-markia-smith/", "videoUrl": "https://www.youtube.com/watch?v=K1ZqQW6Xe8I" }
   ]
 }

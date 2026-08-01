@@ -2,9 +2,8 @@
   function mediaHTML(item) {
     if (!item.media) return '';
     if (item.mediaType === 'video') {
-      return `<div class="fun-media"><video controls preload="metadata">` +
-        `<source src="${item.media}" type="video/quicktime"></video>` +
-        `<a class="video-fallback" href="${item.media}" download>Download the video</a></div>`;
+      return `<div class="fun-media"><video controls controlsList="nodownload" disablePictureInPicture preload="metadata" oncontextmenu="return false;">` +
+        `<source src="${item.media}" type="video/mp4"></video></div>`;
     }
     return `<div class="fun-media"><img src="${item.media}" alt="${item.heading}" loading="lazy"></div>`;
   }

@@ -65,14 +65,18 @@
   const aura = document.getElementById('cursor-aura');
   if (aura && finePointer) {
     let ax = innerWidth / 2, ay = innerHeight / 2, tx = ax, ty = ay;
+    let vx = 0, vy = 0;
+    const stiffness = 0.055, damping = 0.82;
     addEventListener('mousemove', (e) => {
       tx = e.clientX; ty = e.clientY;
       if (!motionIsOff()) aura.classList.add('on');
     }, { passive: true });
     (function tick() {
       if (!motionIsOff()) {
-        ax += (tx - ax) * 0.08;
-        ay += (ty - ay) * 0.08;
+        vx = (vx + (tx - ax) * stiffness) * damping;
+        vy = (vy + (ty - ay) * stiffness) * damping;
+        ax += vx;
+        ay += vy;
         aura.style.transform = `translate(${ax}px, ${ay}px)`;
       }
       requestAnimationFrame(tick);
