@@ -21,13 +21,13 @@ to the audience and to accessibility (bolder text weights, no italic headings).
 
 | Decision | Choice | Notes |
 |---|---|---|
-| Version control | Git, from day one | Repo initialized locally; push to GitHub when ready |
+| Version control | Git, from day one | Repo initialized locally; remote is the user's existing **private** repo, https://github.com/14stutzmanav/14stutzmanav.github.io (superseding an earlier abandoned attempt) |
 | Tech stack | Vanilla HTML/CSS/JS | No framework, no bundler, no `npm install` required to run |
 | Content data | JSON files in `/data`, rendered client-side via `fetch()` | See §5. Avoids a build step while keeping publications/presentations/media editable without touching markup |
-| Hosting | Netlify | Free tier; auto-deploys from GitHub; built-in form handling |
-| Contact method | Real contact form (Netlify Forms) | No custom backend needed |
-| Domain | Deferred | Launch on a free `*.netlify.app` subdomain first. Candidate name: **alexis-stutzmanlewis** (`.com` — availability not yet checked; buy after review). |
-| Analytics | Lightweight, privacy-friendly (GoatCounter) | Matches the reference site's approach — anonymous pageviews only, free, no cookie banner needed |
+| Hosting | **GitHub Pages** (switched from Netlify) | Free, served directly from the repo above at `14stutzmanav.github.io`. `netlify.toml` removed — no longer applicable. |
+| Contact method | Real contact form via **Formspree** (switched from Netlify Forms) | GitHub Pages has no built-in form handling; Formspree is a free third-party form backend. Form in `contact.html` currently points at a placeholder `YOUR_FORM_ID` — needs the user to sign up at formspree.io and swap it in. |
+| Domain | Deferred | Launch on the free `14stutzmanav.github.io` subdomain first. Candidate custom name: **alexis-stutzmanlewis** (`.com` — availability not yet checked). GitHub Pages custom domains need a `CNAME` file added at repo root once purchased. |
+| Analytics | Lightweight, privacy-friendly (GoatCounter) | Matches the reference site's approach — anonymous pageviews only, free, no cookie banner needed. Placeholder script tag (commented out) is on every page pending the user's own signup. |
 
 **SEO/JS tradeoff to flag:** rendering publications/presentations/media via client-side `fetch()`
 of JSON means that content isn't in the initial HTML payload. For a personal site at this scale
@@ -57,7 +57,7 @@ reference site's nav pattern but pointing to pages, not anchors).
 4. **Just for Fun** (`just-for-fun.html`) — personal content: research-organism photos/video
    (fly imaginal disc, C. elegans embryo video), a candid personal photo, "outside the lab"
    reflections, dedication to Rosie.
-5. **Contact** (`contact.html`) — Netlify-powered contact form (name/email/message) plus a
+5. **Contact** (`contact.html`) — Formspree-powered contact form (name/email/message) plus a
    LinkedIn link (see `data/contact.json`). **Confirmed:** no public email address anywhere on
    the site — user wants the Columbia email kept private, matching the CV's own choice. LinkedIn:
    https://www.linkedin.com/in/alexis-stutzman-lewis-phd-975418100/
@@ -195,7 +195,8 @@ Website/
 4. [x] CV page (`cv.html`) + `render-cv.js` + PDF download link.
 5. [x] Black In Genetics page (`black-in-genetics.html`) + `render-black-in-genetics.js`.
 6. [x] Just for Fun page (`just-for-fun.html`) + `render-just-for-fun.js`.
-7. [x] Contact page (`contact.html`) + Netlify form (name/email/message + honeypot) + LinkedIn link.
+7. [x] Contact page (`contact.html`) + Formspree form (name/email/message + honeypot) + LinkedIn
+   link. **Placeholder** — form posts to `YOUR_FORM_ID`, needs the user's real Formspree form ID.
 8. [x] Favicon (SVG monogram), OG tags (reusing headshot/logo/personal-photo per page), meta
    descriptions, `sitemap.xml`/`robots.txt`. **Analytics is a placeholder** — GoatCounter requires
    a free account signup only the user can do; a commented-out script tag with instructions is at
@@ -205,8 +206,9 @@ Website/
    motion toggle and reduced-motion path, verified responsive layout at 1280px and ~700px widths.
    **Not yet done:** a real cross-browser pass (Safari/Firefox) and a screen-reader/keyboard-nav
    audit — recommended before or shortly after launch.
-10. [ ] Connect a GitHub repo to Netlify, deploy to `*.netlify.app`, review live. Requires the user
-    to create/authorize the GitHub remote and the Netlify account connection.
+10. [ ] Push to the user's existing private repo (github.com/14stutzmanav/14stutzmanav.github.io),
+    enable GitHub Pages, review live at `14stutzmanav.github.io`. Requires the user to authenticate
+    `gh` themselves (in progress) — repo currently private, contents not yet inspected.
 11. [ ] Buy + connect custom domain (alexis-stutzmanlewis.com, once availability is confirmed).
 
 ## 9. Open items requiring user input before/during build
