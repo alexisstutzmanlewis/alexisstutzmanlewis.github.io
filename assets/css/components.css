@@ -1,15 +1,22 @@
 /* ============ CV INTRO ============ */
-.cv-intro { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: end; }
-.cv-photo { width: 120px; order: -1; }
-.cv-photo img {
-  width: 100%; height: auto; border-radius: 50%;
+.cv-intro { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
+.cv-person { order: -1; margin: 0; text-align: center; }
+.cv-person img {
+  width: 150px; height: auto; margin: 0 auto; border-radius: 50%;
   -webkit-mask-image: radial-gradient(circle, black 62%, transparent 100%);
   mask-image: radial-gradient(circle, black 62%, transparent 100%);
 }
-.cv-intro .muted { margin: 20px 0 28px; font-size: 1.1rem; }
+.cv-name {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: clamp(2rem, 8vw, 2.6rem); line-height: 1.1; margin-top: 14px;
+}
+.cv-title { white-space: nowrap; font-size: clamp(2.3rem, 11.4vw, 6rem); }
+.cv-title-col .muted { margin: 20px 0 28px; font-size: 1.1rem; }
 @media (min-width: 900px) {
-  .cv-intro { grid-template-columns: 1fr 260px; gap: 64px; }
-  .cv-photo { width: 260px; order: 2; }
+  .cv-intro { grid-template-columns: 1fr 340px; gap: 64px; }
+  .cv-person { order: 2; }
+  .cv-person img { width: 280px; }
+  .cv-name { font-size: 2.3rem; }
 }
 
 /* ============ BLACK IN GENETICS ============ */
@@ -46,19 +53,12 @@
 }
 
 /* ============ CONTACT ============ */
-.contact-form { display: flex; flex-direction: column; gap: 30px; max-width: 640px; margin-top: 40px; }
-.form-field { display: flex; flex-direction: column; gap: 6px; }
-.form-field label { font-size: 0.95rem; font-weight: 500; color: var(--mid); }
-.form-field input, .form-field textarea {
-  font-family: var(--font-body); font-size: 1.15rem; color: var(--ink);
-  background: transparent; border: 0; border-bottom: 1px solid var(--ink);
-  border-radius: 0; padding: 10px 0; min-height: 48px;
-  transition: border-color 0.25s ease;
+.btn-row { display: flex; flex-direction: column; gap: 14px; margin-top: 44px; max-width: 460px; }
+.btn--outline { background: transparent; color: var(--ink); border: 1px solid var(--ink); gap: 10px; }
+.btn--outline:hover { background: var(--ink); color: var(--paper); }
+@media (min-width: 900px) {
+  .btn-row { flex-direction: row; flex-wrap: wrap; max-width: none; }
 }
-.form-field textarea { resize: vertical; min-height: 140px; line-height: 1.5; }
-.form-field input:focus, .form-field textarea:focus { outline: none; border-bottom-color: var(--accent); box-shadow: 0 1px 0 var(--accent); }
-.hidden { position: absolute; left: -9999px; }
-.contact-form .btn { align-self: flex-start; border: 0; cursor: pointer; font-family: var(--font-body); }
 
 /* ============ TRIBUTE (Dedicated to Rosie) ============ */
 .tribute {
@@ -72,3 +72,16 @@
 .tribute .fun-media { max-width: 520px; margin: 0 auto 36px; }
 .tribute .fun-caption { margin-inline: auto; }
 .has-tribute .site-footer { margin-top: 0; }
+
+/* ============ HOVER MOTION (fine pointers, switched off by the motion toggle) ============ */
+.btn { transition: background 0.25s ease, color 0.25s ease, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.arrow-link { transition: color 0.25s ease, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.data-row { transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.hero-portrait img { transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+@media (hover: hover) and (pointer: fine) {
+  body:not(.motion-off) .btn:hover { transform: translateY(-3px); }
+  body:not(.motion-off) .arrow-link:hover { transform: translateY(-2px); }
+  body:not(.motion-off) .data-row:hover { transform: translateX(6px); }
+  body:not(.motion-off) .index-list a:hover { transform: translateX(10px); }
+  body:not(.motion-off) .hero-portrait img:hover { transform: translate(-6px, -6px); }
+}

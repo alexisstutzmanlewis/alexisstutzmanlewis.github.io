@@ -16,9 +16,10 @@
   font-weight: 700;
   line-height: 1.0;
   letter-spacing: -0.02em;
-  margin: 14px 0 24px;
+  margin: 0 0 16px;
 }
 .hero-name span { display: block; }
+.role { font-size: 1.1rem; font-weight: 500; line-height: 1.5; color: var(--mid); max-width: 36ch; margin-bottom: 26px; }
 .hero-text .lede { margin-bottom: 30px; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 4px 36px; }
 
@@ -37,7 +38,8 @@
   }
   .hero-portrait img { position: relative; z-index: 1; max-height: none; }
   .hero-text { padding-top: 0; }
-  .hero-name { font-size: clamp(2.8rem, 4.5vw, 4.9rem); margin: 18px 0 32px; }
+  .hero-name { font-size: clamp(2.8rem, 4.5vw, 4.9rem); margin: 0 0 20px; }
+  .role { font-size: 1.2rem; margin-bottom: 32px; }
 }
 
 /* ============ BENCH (microscopy panel) ============ */
@@ -61,7 +63,7 @@
 .index-list a {
   display: grid; grid-template-columns: 1fr; gap: 4px;
   padding: 24px 0; border-bottom: 1px solid var(--rule); text-decoration: none;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .index-list a:hover { color: var(--accent); }
 .index-list strong { font-family: var(--font-heading); font-weight: 700; font-size: clamp(1.8rem, 6vw, 2.8rem); line-height: 1.1; }

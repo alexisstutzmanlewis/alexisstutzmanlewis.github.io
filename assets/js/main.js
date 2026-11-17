@@ -50,7 +50,27 @@
     }, { passive: true });
   }
 
-  /* ---------- gentle reveal for dynamically added blocks ---------- */
+  /* ---------- cursor glow (fine pointers only) ---------- */
+  var aura = document.getElementById('cursor-aura');
+  if (aura && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var ax = innerWidth / 2, ay = innerHeight / 2, tx = ax, ty = ay, vx = 0, vy = 0;
+    var stiffness = 0.055, damping = 0.82;
+    window.addEventListener('mousemove', function (e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!body.classList.contains('motion-off')) aura.classList.add('on');
+    }, { passive: true });
+    (function tick() {
+      if (!body.classList.contains('motion-off')) {
+        vx = (vx + (tx - ax) * stiffness) * damping;
+        vy = (vy + (ty - ay) * stiffness) * damping;
+        ax += vx; ay += vy;
+        aura.style.transform = 'translate(' + ax + 'px, ' + ay + 'px)';
+      }
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  /* ---------- gentle reveal ---------- */
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {

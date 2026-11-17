@@ -1,5 +1,7 @@
 {
   "showPublicEmail": false,
-  "note": "User confirmed: keep Columbia email private, matching the CV's own privacy choice. Contact page relies on the Netlify form plus LinkedIn only.",
-  "linkedinUrl": "https://www.linkedin.com/in/alexis-stutzman-lewis-phd-975418100/"
+  "note": "Contact page has no form or public email: LinkedIn, Instagram (@dr.stutzmanlewis) and the Marlin Lab page only.",
+  "linkedinUrl": "https://www.linkedin.com/in/alexis-stutzman-lewis-phd-975418100/",
+  "instagramUrl": "https://www.instagram.com/dr.stutzmanlewis/",
+  "marlinLabUrl": "https://www.biancajonesmarlin.com/alexstutzman"
 }

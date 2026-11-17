@@ -71,9 +71,4 @@
     render('poster-list', pres.posters.map(presRow).join(''));
   });
 
-  fetch('data/media.json').then(r => r.json()).then(items => {
-    render('media-list', items.map(m =>
-      row(m.year, `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.title)}</a>`, `${esc(m.outlet)} — ${esc(m.type)}`)
-    ).join(''));
-  });
 })();

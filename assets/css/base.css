@@ -247,20 +247,35 @@ main { padding-top: 60px; }
 }
 
 /* ============ REVEAL ============ */
-.fade-in { opacity: 0; transition: opacity 0.8s ease; }
-.fade-in.visible { opacity: 1; }
+.fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.fade-in.visible { opacity: 1; transform: none; }
+
+/* soft cursor glow: diffuse, cloud-like, springs after the pointer (desktop only) */
+#cursor-aura {
+  position: fixed; top: 0; left: 0; width: 540px; height: 540px; margin: -270px 0 0 -270px;
+  border-radius: 50%; pointer-events: none; z-index: -1; filter: blur(48px); opacity: 0;
+  background:
+    radial-gradient(circle at 48% 52%, rgba(107, 44, 74, 0.20) 0%, rgba(107, 44, 74, 0.08) 38%, transparent 64%),
+    radial-gradient(circle at 60% 42%, rgba(201, 150, 171, 0.26) 0%, transparent 56%),
+    radial-gradient(circle at 40% 60%, rgba(196, 164, 118, 0.22) 0%, transparent 56%);
+  transition: opacity 0.9s ease;
+}
+#cursor-aura.on { opacity: 1; }
+body.motion-off #cursor-aura { display: none; }
+@media (hover: none), (pointer: coarse) { #cursor-aura { display: none; } }
 
 body.motion-off *, body.motion-off *::before, body.motion-off *::after {
   transition-duration: 0.01ms !important;
   animation-duration: 0.01ms !important;
 }
-body.motion-off .fade-in { opacity: 1; }
+body.motion-off .fade-in { opacity: 1; transform: none; }
 body.motion-off { scroll-behavior: auto; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
   html { scroll-behavior: auto; }
-  .fade-in { opacity: 1; }
+  .fade-in { opacity: 1; transform: none; }
+  #cursor-aura { display: none; }
 }
 
 @media print {

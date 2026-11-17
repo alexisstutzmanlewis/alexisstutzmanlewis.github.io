@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="assets/css/components.css">
 </head>
 <body>
+<div id="cursor-aura" aria-hidden="true"></div>
 
 <header class="masthead" id="navbar">
   <a href="index.html" class="wordmark">AVSL</a>
@@ -38,27 +39,13 @@
   <section class="page-head wrap">
     <p class="kicker">Let's connect</p>
     <h1 class="page-title">Get in touch</h1>
-    <p class="lede" style="margin-top:24px;">Have a question, a collaboration idea, or just want to say hello? Send a message below, or find me on LinkedIn.</p>
+    <p class="lede" style="margin-top:24px;">Find me on LinkedIn or Instagram, or visit my page on the Marlin Lab website.</p>
 
-    <!-- TODO: sign up free at https://formspree.io, create a form, and replace YOUR_FORM_ID below -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
-      <div class="form-field">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" autocomplete="name" required>
-      </div>
-      <div class="form-field">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
-      </div>
-      <div class="form-field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send message</button>
-    </form>
-
-    <p style="margin-top:48px;"><a href="#" id="linkedin-link" class="arrow-link" target="_blank" rel="noopener">Find me on LinkedIn &rarr;</a></p>
+    <div class="btn-row">
+      <a class="btn btn--outline" id="linkedin-link" href="https://www.linkedin.com/in/alexis-stutzman-lewis-phd-975418100/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&nearr;</span></a>
+      <a class="btn btn--outline" id="instagram-link" href="https://www.instagram.com/dr.stutzmanlewis/" target="_blank" rel="noopener">Instagram @dr.stutzmanlewis <span aria-hidden="true">&nearr;</span></a>
+      <a class="btn btn--outline" id="marlin-link" href="https://www.biancajonesmarlin.com/alexstutzman" target="_blank" rel="noopener">Marlin Lab page <span aria-hidden="true">&nearr;</span></a>
+    </div>
   </section>
 </main>
 
@@ -70,8 +57,10 @@
 <script src="assets/js/main.js"></script>
 <script>
   fetch('data/contact.json').then(function (r) { return r.json(); }).then(function (c) {
-    var link = document.getElementById('linkedin-link');
-    if (link && c.linkedinUrl) link.href = c.linkedinUrl;
+    [['linkedin-link', c.linkedinUrl], ['instagram-link', c.instagramUrl], ['marlin-link', c.marlinLabUrl]].forEach(function (pair) {
+      var el = document.getElementById(pair[0]);
+      if (el && pair[1]) el.href = pair[1];
+    });
   });
 </script>
 <!-- TODO: analytics — sign up free at https://www.goatcounter.com, then uncomment and replace MYCODE:
