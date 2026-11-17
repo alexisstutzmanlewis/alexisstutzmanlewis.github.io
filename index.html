@@ -13,53 +13,66 @@
 <link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body class="washes-strong">
-<div id="veil" aria-hidden="true"></div>
-<div id="cursor-aura"></div>
-<div class="wash-field">
-  <div class="wash wash-1"></div>
-  <div class="wash wash-2"></div>
-  <div class="wash wash-3"></div>
-</div>
+<body>
 
-<nav class="site-nav" id="navbar">
-  <button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button>
-  <a href="index.html" class="nav-logo">AVSL</a>
-  <ul class="nav-links">
-    <li><a href="index.html" aria-current="page">Home</a></li>
-    <li><a href="cv.html">CV</a></li>
-    <li><a href="black-in-genetics.html">Black In Genetics</a></li>
-    <li><a href="just-for-fun.html">Just for Fun</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+<header class="masthead" id="navbar">
+  <a href="index.html" class="wordmark">AVSL</a>
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav class="menu" id="menu" aria-label="Primary">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="black-in-genetics.html">Black In Genetics</a></li>
+      <li><a href="just-for-fun.html">Just for Fun</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="motion-toggle" class="motion-toggle" aria-pressed="false" type="button">Motion: on</button>
+  </nav>
+</header>
 
 <main>
-  <section id="home">
-    <div class="plate-border">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Postdoctoral Research Scientist &middot; Zuckerman Institute, Columbia University</p>
-          <h1 class="hero-name">Alexis V.<br>Stutzman Lewis, Ph.D.</h1>
-          <p class="hero-tagline">A genomicist working at the intersection of inheritance and neuroscience — how generations remember the past, and how those memories become biology.</p>
-          <div class="cta-row">
-            <a href="cv.html" class="btn-primary">View CV</a>
-            <a href="contact.html" class="btn-ghost">Get in touch</a>
-          </div>
-        </div>
-        <div class="hero-photo-col">
-          <div id="photo-frame">
-            <img src="assets/images/media/headshot.jpg" alt="Portrait of Alexis Stutzman Lewis">
-          </div>
-        </div>
+  <section class="hero wrap">
+    <figure class="hero-portrait">
+      <img src="assets/images/media/headshot.jpg" alt="Portrait of Alexis Stutzman Lewis in a lab coat, seated at a laboratory bench">
+    </figure>
+    <div class="hero-text">
+      <p class="kicker">Postdoctoral Research Scientist, Zuckerman Institute, Columbia University</p>
+      <h1 class="hero-name"><span>Alexis V.</span><span>Stutzman Lewis, Ph.D.</span></h1>
+      <p class="lede">A genomicist working at the intersection of inheritance and neuroscience — how generations remember the past, and how those memories become biology.</p>
+      <div class="hero-links">
+        <a href="cv.html" class="arrow-link">Read the CV &rarr;</a>
+        <a href="contact.html" class="arrow-link">Get in touch &rarr;</a>
       </div>
     </div>
+  </section>
+
+  <section class="bench" aria-labelledby="bench-title">
+    <div class="wrap bench-inner">
+      <div class="bench-media">
+        <img src="assets/images/research/imaginal-disc.gif" alt="Fluorescence microscopy of a fruit fly wing imaginal disc, nuclei glowing magenta and teal on black" loading="lazy">
+      </div>
+      <div class="bench-copy">
+        <p class="kicker">From the bench</p>
+        <h2 id="bench-title">Seen under the microscope</h2>
+        <p>A fruit fly wing imaginal disc, stained for DNA and a nuclear protein. Tissue like this was the subject of my PhD work.</p>
+        <a href="just-for-fun.html" class="arrow-link">More from the lab &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="index wrap" aria-labelledby="index-title">
+    <h2 class="index-title" id="index-title">Explore</h2>
+    <ul class="index-list">
+      <li><a href="cv.html"><strong>Curriculum vitae</strong><span>Research, publications, awards, and teaching.</span></a></li>
+      <li><a href="black-in-genetics.html"><strong>Black In Genetics</strong><span>The nonprofit I founded in 2020.</span></a></li>
+      <li><a href="just-for-fun.html"><strong>Just for fun</strong><span>Microscopy, a favorite embryo, and Rosie.</span></a></li>
+    </ul>
   </section>
 </main>
 
