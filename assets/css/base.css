@@ -18,7 +18,7 @@ a { color: inherit; }
 
 h1, h2, h3 {
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -51,7 +51,7 @@ body.menu-open .masthead { background: var(--paper); border-bottom-color: transp
 
 .wordmark {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -88,7 +88,7 @@ body.menu-open { overflow: hidden; }
 .menu li a {
   display: block;
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 700;
   font-size: clamp(2.4rem, 11.5vw, 3.6rem);
   line-height: 1.12;
   padding: 0.12em 0;
@@ -153,7 +153,7 @@ main { padding-top: 60px; }
 
 .lede {
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1.45rem, 4.6vw, 2.1rem);
   line-height: 1.3;
   max-width: 30ch;
@@ -200,7 +200,7 @@ main { padding-top: 60px; }
 
 .block-lede {
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(1.3rem, 3.6vw, 1.7rem);
   line-height: 1.5;
   max-width: 44ch;
@@ -215,7 +215,7 @@ main { padding-top: 60px; }
 .data-date { font-size: 0.95rem; font-weight: 500; color: var(--accent); }
 .data-title {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.3rem;
   line-height: 1.25;
 }
@@ -240,7 +240,7 @@ main { padding-top: 60px; }
   padding: 32px var(--gutter) 40px;
   display: flex; flex-direction: column; gap: 6px;
 }
-.footer-name { font-family: var(--font-heading); font-weight: 600; font-size: 1.25rem; }
+.footer-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; }
 .footer-copy { font-size: 0.95rem; color: var(--mid); }
 @media (min-width: 700px) {
   .site-footer { flex-direction: row; justify-content: space-between; align-items: baseline; }

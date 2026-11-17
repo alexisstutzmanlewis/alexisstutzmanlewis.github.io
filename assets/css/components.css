@@ -59,3 +59,16 @@
 .form-field input:focus, .form-field textarea:focus { outline: none; border-bottom-color: var(--accent); box-shadow: 0 1px 0 var(--accent); }
 .hidden { position: absolute; left: -9999px; }
 .contact-form .btn { align-self: flex-start; border: 0; cursor: pointer; font-family: var(--font-body); }
+
+/* ============ TRIBUTE (Dedicated to Rosie) ============ */
+.tribute {
+  background: var(--paper-deep);
+  margin-top: clamp(24px, 6vw, 80px);
+  padding-block: clamp(56px, 10vw, 128px);
+  text-align: center;
+}
+.tribute[hidden] { display: none; }
+.tribute-inner { max-width: 680px; margin: 0 auto; padding-inline: var(--gutter); }
+.tribute .fun-media { max-width: 520px; margin: 0 auto 36px; }
+.tribute .fun-caption { margin-inline: auto; }
+.has-tribute .site-footer { margin-top: 0; }
