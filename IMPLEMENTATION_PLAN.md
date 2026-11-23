@@ -106,7 +106,7 @@ Publications, presentations, and CV data are now sourced from the user's officia
 - [`data/presentations.json`](data/presentations.json) — `oral` and `posters` arrays; enriched
   with co-presenter names from the Black In Genetics biosketch excerpt. The ASHG 2020 talk
   ("The Creation of Black in Genetics...") date conflict between the CV (Oct 29) and biosketch
-  (Oct 27) is resolved — user confirmed the talk took place Monday, October 26, 2020.
+  (Oct 27) is resolved — user confirmed the talk took place Monday, October 29, 2020.
 - [`data/cv.json`](data/cv.json) — header info, education, grants/fellowships, awards/honors,
   teaching experience, service, and mentoring — all from the CV.
 - [`data/black-in-genetics.json`](data/black-in-genetics.json) — full biosketch paragraph, key
@@ -130,7 +130,7 @@ DOM at load time — content edits going forward mean editing these files, never
   Chrome/Firefox; `ffmpeg` isn't installed locally, so this is a build-phase task)
 
 **Still open:**
-- [x] Resolved: Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
+- [x] Resolved: Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 29, 2020
 - [x] Just for Fun media (imaginal disc GIF, C. elegans video) — placed; video needs format conversion
 - CV as a downloadable PDF (the source CV PDF itself can likely be used directly — confirm)
 - A second, more personal/candid photo for the Just for Fun page (candidates exist in
@@ -226,7 +226,7 @@ Website/
 - [x] Headshot, Black In Genetics logo — placed in `assets/images/media/`
 - [x] Black In Genetics page content — full biosketch text provided, in `data/black-in-genetics.json`
 - [x] Contact form fields — delegated to Claude
-- [x] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 26, 2020
+- [x] Resolve Oct 27 vs. Oct 29, 2020 date discrepancy — confirmed as October 29, 2020
 - [x] Research imagery/video for Just for Fun — imaginal disc GIF + C. elegans video, placed
 - [x] CV PDF file for the "Download CV" button — using `260731_Stutzman_CV-online.pdf` (the
       privacy-conscious "online" version, no direct email listed), at `assets/documents/Stutzman_CV.pdf`
