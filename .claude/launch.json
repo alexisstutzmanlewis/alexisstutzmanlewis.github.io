@@ -8,10 +8,21 @@
       "port": 8934
     },
     {
+      "name": "live-5544",
+      "url": "http://localhost:5544",
+      "port": 5544
+    },
+    {
       "name": "static-nocache",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-c", "import http.server as h, socketserver as s\nclass H(h.SimpleHTTPRequestHandler):\n    def end_headers(self):\n        self.send_header('Cache-Control','no-store')\n        super().end_headers()\ns.ThreadingTCPServer.allow_reuse_address = True\ns.ThreadingTCPServer(('', 8935), H).serve_forever()"],
       "port": 8935
+    },
+    {
+      "name": "static-node",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "const h=require('http'),fs=require('fs'),p=require('path');const root=process.cwd();const T={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.gif':'image/gif','.svg':'image/svg+xml','.mp4':'video/mp4','.pdf':'application/pdf'};h.createServer((q,s)=>{let u=decodeURIComponent(q.url.split('?')[0]);if(u.endsWith('/'))u+='index.html';const f=p.join(root,u);if(!f.startsWith(root)){s.writeHead(403);return s.end()}fs.readFile(f,(e,d)=>{if(e){s.writeHead(404);return s.end('nf')}s.writeHead(200,{'Content-Type':T[p.extname(f)]||'application/octet-stream','Cache-Control':'no-store'});s.end(d)})}).listen(8936)"],
+      "port": 8936
     }
   ]
 }

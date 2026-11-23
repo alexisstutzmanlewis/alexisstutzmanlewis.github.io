@@ -13,6 +13,7 @@
     { "date": "June 2018", "title": "B.S., Biological Sciences", "org": "University of Chicago", "detail": "Advisors: Kohta Ikegami & Ivan Moskowitz. Thesis: \"Mitochondrial defects as a candidate molecular mechanism for Lamin A/C-related cardiomyopathy\"" }
   ],
   "grantsAndFellowships": [
+    { "date": "2026–2027", "title": "Burroughs Wellcome Fund Ad Hoc", "detail": "Awarded to BlackInSTEMM" },
     { "date": "2025–2028", "title": "Junior Fellow, Simons Society of Fellows" },
     { "date": "2025–2028", "title": "Burroughs Wellcome Fund PDEP" },
     { "date": "2024–2025", "title": "E. E. Just Postgraduate Fellowship in the Life Sciences" },
@@ -45,10 +46,10 @@
     { "date": "2019–2021", "title": "BBSP Peer Mentor", "org": "UNC" }
   ],
   "mentoring": [
-    { "name": "Ariana Reid", "role": "Undergraduate", "org": "University of North Carolina at Chapel Hill" },
-    { "name": "Glennis Cho", "role": "Undergraduate", "org": "Barnard College" },
     { "name": "Camaria Polk", "role": "Undergraduate", "org": "Barnard College" },
     { "name": "Leo Matsuura", "role": "Undergraduate", "org": "McGill University" },
-    { "name": "Arya Shah", "role": "Undergraduate", "org": "Bennington College" }
+    { "name": "Arya Shah", "role": "Undergraduate", "org": "Bennington College" },
+    { "name": "Glennis Cho", "role": "Undergraduate", "org": "Barnard College" },
+    { "name": "Ariana Reid", "role": "Undergraduate", "org": "University of North Carolina at Chapel Hill" }
   ]
 }

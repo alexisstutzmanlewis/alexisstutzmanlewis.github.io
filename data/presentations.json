@@ -1,6 +1,8 @@
 {
   "fullListUrl": "https://tinyurl.com/AlexisSL",
   "oral": [
+    { "title": "Interrogating a role for extracellular vesicles (EVs) in mediating intergenerational memory of stress", "authors": ["Stutzman AV"], "venue": "Stony Brook University Simons STEM Scholars", "date": "2026-07-30" },
+    { "title": "Sniffing out the molecular basis of stress-induced olfactory receptor choice", "authors": ["Stutzman AV"], "venue": "Simons Society of Fellows Retreat", "date": "2026-03-15" },
     { "title": "Interrogating a role for extracellular vesicles (EVs) in mediating intergenerational memory of stress", "authors": ["Stutzman AV"], "venue": "Park City Winter Conference on Learning & Memory", "date": "2025-01-02" },
     { "title": "Heterochromatic 3D genome architecture is directed by H3K9/HP1-dependent and independent mechanisms", "authors": ["Stutzman AV"], "venue": "Fragile Nucleosome Seminar Series", "date": "2023-06-21" },
     { "title": "Heterochromatic 3D genome architecture is directed by H3K9/HP1-dependent and independent mechanisms", "authors": ["Stutzman AV"], "venue": "Genetics Society of America Drosophila Conference", "date": "2023-03-01", "dateEnd": "2023-03-05" },
@@ -11,6 +13,7 @@
     { "title": "Lamin A/C is required for maintaining the structure and function of mature cardiomyocytes", "authors": ["Stutzman AV"], "venue": "Midstates Consortium for Math and Science, St. Louis, MO", "date": "2017-11-10", "dateEnd": "2017-11-11" }
   ],
   "posters": [
+    { "title": "Olfactory Fear Conditioning Initiates Development in the Main Olfactory Epithelium", "authors": ["Stutzman AV"], "venue": "Society for Neuroscience Conference (SfN), Washington, DC", "date": "2026-11-14", "dateEnd": "2026-11-18" },
     { "title": "Interrogating the Role for Extracellular Vesicles in Intergenerational Inheritance of Olfactory Fear Conditioning", "authors": ["Stutzman AV"], "venue": "Society for Neuroscience Conference (SfN), San Diego, CA", "date": "2025-11-15", "dateEnd": "2025-11-19" },
     { "title": "Determining the molecular mechanisms of heritable stress-induced bias in olfactory neuron identity", "authors": ["Stutzman AV"], "venue": "Society for Neuroscience Conference (SfN), Chicago, IL", "date": "2024-10-05", "dateEnd": "2024-10-09" },
     { "title": "Interrogating the role of the histone mark H3K9me3 in D. melanogaster Genome Organization and Gene Regulation", "authors": ["Stutzman AV"], "venue": "The Allied Genetics Conference (TAGC), Online", "date": "2020-04-22", "dateEnd": "2020-04-25" },
