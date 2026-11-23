@@ -15,7 +15,7 @@
   "grantsAndFellowships": [
     { "date": "2026–2027", "title": "Burroughs Wellcome Fund Ad Hoc", "detail": "Awarded to BlackInSTEMM" },
     { "date": "2025–2028", "title": "Junior Fellow, Simons Society of Fellows" },
-    { "date": "2025–2028", "title": "Burroughs Wellcome Fund PDEP" },
+    { "date": "2025–2028", "title": "Burroughs Wellcome Fund Postdoctoral Enrichment Program (PDEP)" },
     { "date": "2024–2025", "title": "E. E. Just Postgraduate Fellowship in the Life Sciences" },
     { "date": "2022–2024", "title": "CZI Science", "detail": "Awarded to BlackInGenetics" },
     { "date": "2020–2021", "title": "T32 GM135128 (NIH/NIGMS)" },
@@ -23,6 +23,7 @@
     { "date": "2018–2024", "title": "UNC IMSD-GMB Genetics Diversity Excellence Fellow" }
   ],
   "awards": [
+    { "date": "2026", "title": "BlackInSTEMM ABRCMS Travel Award" },
     { "date": "2025", "title": "Society for Neuroscience Trainee Professional Development Award (TPDA)" },
     { "date": "2023–2024", "title": "UNCF and Ernest E. Just Life Science Society Award for Outstanding Leadership and Service in the Life Sciences", "detail": "Awarded to BlackInGenetics" },
     { "date": "2022", "title": "UNC GMB Retreat — Best Graduate Student Talk" },
